@@ -27,7 +27,6 @@ using System.Drawing;
 using System.Globalization;
 using System.IO;
 using System.Linq;
-using System.Runtime.InteropServices;
 using System.Security.Cryptography;
 using System.Text;
 using System.Windows.Forms;
@@ -980,7 +979,7 @@ namespace Evemu_DB_Editor
                     bid = 0;     // If execution reaches this line, there is some problem with radioButton1 and radioButton2 interaction.
             }
 
-            Int64 integerTime = DateTime.Now.ToFileTimeUtc();
+            UInt64 integerTime = (UInt64)DateTime.Now.ToFileTimeUtc();
             string str_MySQL_Query;
             //if (Selectedraces != "NULL")
             //{
