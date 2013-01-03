@@ -45,17 +45,6 @@ namespace Evemu_DB_Editor
         internal string connection;
         internal bool recordqueries = false;
 
-        [StructLayout(LayoutKind.Sequential)]
-
-        public struct FILE_TIME
-        {
-            public UInt32 dwLowDateTime;
-            public UInt32 dwHighDateTime;
-        }
-
-        [DllImport("kernel32")]
-        public static extern void GetSystemTimeAsFileTime(ref FILE_TIME lpSystemTimeAsFileTime);
-
         #region Main
         public main()
         {
@@ -884,7 +873,7 @@ namespace Evemu_DB_Editor
             {
                 Selectedraces = Selectedraces + ", '" + Selected.SubItems[1].Text + "'";
             }
-            if (Selectedraces != (""))
+            if (Selectedraces != "")
             {
                 Selectedraces = Selectedraces.Remove(0, 2);
             }
@@ -991,24 +980,44 @@ namespace Evemu_DB_Editor
                     bid = 0;     // If execution reaches this line, there is some problem with radioButton1 and radioButton2 interaction.
             }
 
-            FILE_TIME ft1 = new FILE_TIME();
-            GetSystemTimeAsFileTime(ref ft1);
-            UInt64 integerTime = (((UInt64)(ft1.dwHighDateTime)) << 32) | ((UInt64)(ft1.dwLowDateTime));
+            Int64 integerTime = DateTime.Now.ToFileTimeUtc();
             string str_MySQL_Query;
-            if (Selectedraces != "NULL")
-            {
-                str_MySQL_Query = "INSERT INTO market_orders (typeID, charID, regionID, stationID, bid, price, volEntered, volRemaining, issued, orderState, minVolume, contraband, accountID, duration, isCorp, solarSystemID, escrow, jumps) SELECT typeID, 1 as charID, regionID, stationID, " + bid.ToString() + " as bid, basePrice as price, " + marketQuantityTxtBox.Text + " as volEntered, " + marketQuantityTxtBox.Text + " as volRemaining, " + integerTime.ToString() + " as issued, 1 as orderState, 1 as minVolume,0 as contraband, 0 as accountID, 18250 as duration,0 as isCorp, solarSystemID, 0 as escrow, 1 as jumps FROM staStations, invTypes WHERE solarSystemID in (" + Selectedsystems + ") AND published = 1 and raceID in (" + Selectedraces + ") and groupID in (" + Selectedgroups + ")";
+            //if (Selectedraces != "NULL")
+            //{
+                str_MySQL_Query = "INSERT INTO market_orders (typeID, charID, regionID, stationID, bid, "
+                    +"price, volEntered, volRemaining, issued, orderState, minVolume, contraband, "
+                    +"accountID, duration, isCorp, solarSystemID, escrow, jumps) SELECT typeID,"
+                    +"1 as charID, regionID, stationID, "
+                    + bid.ToString() + " as bid, basePrice as price, "
+                    + marketQuantityTxtBox.Text + " as volEntered, "
+                    + marketQuantityTxtBox.Text + " as volRemaining, "
+                    + integerTime.ToString() + " as issued,"
+                    +"1 as orderState, 1 as minVolume,0 as contraband, 0 as accountID, 18250 as duration,"
+                    +"0 as isCorp, solarSystemID, 0 as escrow, 1 as jumps FROM staStations, invTypes "
+                    +"WHERE solarSystemID in (" + Selectedsystems + ") AND published = 1 "
+                    +"and raceID in (" + Selectedraces + ") and groupID in (" + Selectedgroups + ")";
                 queryMarketSeedTxtBox.Text = str_MySQL_Query;
                 if (applyQueryToDBChkBox.Checked)
                     DBConnect.SQuery(str_MySQL_Query);
-            }
-            else
-            {
-                str_MySQL_Query = "INSERT INTO market_orders (typeID, charID, regionID, stationID, bid, price, volEntered, volRemaining, issued, orderState, minVolume, contraband, accountID, duration, isCorp, solarSystemID, escrow, jumps) SELECT typeID, 1 as charID, regionID, stationID, " + bid.ToString() + " as bid, basePrice as price, " + marketQuantityTxtBox.Text + " as volEntered, " + marketQuantityTxtBox.Text + " as volRemaining, " + integerTime.ToString() + " as issued, 1 as orderState, 1 as minVolume,0 as contraband, 0 as accountID, 18250 as duration,0 as isCorp, solarSystemID, 0 as escrow, 1 as jumps FROM staStations, invTypes WHERE solarSystemID in (" + Selectedsystems + ") AND published = 1 and raceID is NULL and groupID in (" + Selectedgroups + ")";
-                queryMarketSeedTxtBox.Text = str_MySQL_Query;
-                if (applyQueryToDBChkBox.Checked)
-                    DBConnect.SQuery(str_MySQL_Query);
-            }
+            //}
+            //else
+            //{
+            //    str_MySQL_Query = "INSERT INTO market_orders (typeID, charID, regionID, stationID, bid,"
+            //        +"price, volEntered, volRemaining, issued, orderState, minVolume, contraband, "
+            //        +"accountID, duration, isCorp, solarSystemID, escrow, jumps) SELECT typeID,"
+            //        +"1 as charID, regionID, stationID, "
+            //        + bid.ToString() + " as bid, basePrice as price, "
+            //        + marketQuantityTxtBox.Text + " as volEntered, "
+            //        + marketQuantityTxtBox.Text + " as volRemaining, "
+            //        + integerTime.ToString() + " as issued,"
+            //        +"1 as orderState, 1 as minVolume,0 as contraband, 0 as accountID, 18250 as duration,"
+            //        +"0 as isCorp, solarSystemID, 0 as escrow, 1 as jumps FROM staStations, invTypes "
+            //        +"WHERE solarSystemID in (" + Selectedsystems + ") AND published = 1 "
+            //        +"and raceID is NULL and groupID in (" + Selectedgroups + ")";
+            //    queryMarketSeedTxtBox.Text = str_MySQL_Query;
+            //    if (applyQueryToDBChkBox.Checked)
+            //        DBConnect.SQuery(str_MySQL_Query);
+            //}
         }
         #endregion
 
