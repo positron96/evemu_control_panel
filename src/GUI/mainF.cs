@@ -985,7 +985,8 @@ namespace Evemu_DB_Editor
             //{
                 str_MySQL_Query = "INSERT INTO market_orders (typeID, charID, regionID, stationID, bid, "
                     +"price, volEntered, volRemaining, issued, orderState, minVolume, contraband, "
-                    +"accountID, duration, isCorp, solarSystemID, escrow, jumps) SELECT typeID,"
+                    +"accountID, duration, isCorp, solarSystemID, escrow, jumps) "
+                    +"SELECT typeID,"
                     +"1 as charID, regionID, stationID, "
                     + bid.ToString() + " as bid, basePrice as price, "
                     + marketQuantityTxtBox.Text + " as volEntered, "
@@ -996,8 +997,10 @@ namespace Evemu_DB_Editor
                     +"WHERE solarSystemID in (" + Selectedsystems + ") AND published = 1 "
                     +"and raceID in (" + Selectedraces + ") and groupID in (" + Selectedgroups + ")";
                 queryMarketSeedTxtBox.Text = str_MySQL_Query;
-                if (applyQueryToDBChkBox.Checked)
-                    DBConnect.SQuery(str_MySQL_Query);
+                if (applyQueryToDBChkBox.Checked) {
+                    int res = DBConnect.SQuery(str_MySQL_Query);
+                    MessageBox.Show("Query OK, "+res+" rows affected");
+                }
             //}
             //else
             //{
