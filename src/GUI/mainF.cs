@@ -979,6 +979,10 @@ namespace Evemu_DB_Editor
                     bid = 0;     // If execution reaches this line, there is some problem with radioButton1 and radioButton2 interaction.
             }
 
+            string priceCol = "basePrice";
+            DataRow cdesc = DBConnect.AQuery("DESCRIBE invTypes basePrice").Rows[0];
+            if(cdesc[1].ToString().ToUpper().Contains("BIGINT")) priceCol="basePrice/10000";
+
             UInt64 integerTime = (UInt64)DateTime.Now.ToFileTimeUtc();
             string str_MySQL_Query;
             //if (Selectedraces != "NULL")
@@ -988,7 +992,8 @@ namespace Evemu_DB_Editor
                     +"accountID, duration, isCorp, solarSystemID, escrow, jumps) "
                     +"SELECT typeID,"
                     +"1 as charID, regionID, stationID, "
-                    + bid.ToString() + " as bid, basePrice as price, "
+                    + bid.ToString() + " as bid, "
+                    + priceCol + " as price, "
                     + marketQuantityTxtBox.Text + " as volEntered, "
                     + marketQuantityTxtBox.Text + " as volRemaining, "
                     + integerTime.ToString() + " as issued,"
