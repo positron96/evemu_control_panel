@@ -993,7 +993,7 @@ namespace Evemu_DB_Editor
                     +"SELECT typeID,"
                     +"1 as charID, regionID, stationID, "
                     + bid.ToString() + " as bid, "
-                    + priceCol + " as price, "
+                    + "IF(basePrice=0, 1000, " + priceCol + ") as price, "
                     + marketQuantityTxtBox.Text + " as volEntered, "
                     + marketQuantityTxtBox.Text + " as volRemaining, "
                     + integerTime.ToString() + " as issued,"
