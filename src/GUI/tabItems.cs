@@ -13,23 +13,30 @@ namespace Evemu_DB_Editor.src.gui {
             InitializeComponent();
         }
 
-        //private void tabItemEditor_Enter(object sender, EventArgs e)
-        //{
-        //    if(!DBConnect.isConnected() ) {
-        //        showNotConnected();
-        //        return;
-        //    }
-        //    foreach (DataRow record in DBConnect.AQuery("SELECT CategoryName from invCategories").Rows)
-        //    {
-        //        CategoryDropdown.Items.Add(record[0]);
-        //    }
+        private void tabItems_Enter(object sender, EventArgs e)
+        {
+            if(!DBConnect.isConnected() ) {
+                frMain.showNotConnected();
+                return;
+            }
+            foreach (DataRow record in DBConnect.AQuery("SELECT CategoryName from invCategories").Rows)
+            {
+                lCategory.Items.Add(record[0]);
+            }
 
-        //}
+        }
 
         private void btSearch_Click(object sender, EventArgs e)
         {
             lvItems.Items.Clear();
-            string SQLQuery = "SELECT invTypes.typeID, invTypes.typeName, invGroups.groupName, chrRaces.raceName, invTypes.description FROM (invCategories RIGHT JOIN (invTypes LEFT JOIN invGroups ON invTypes.groupID = invGroups.groupID) ON invCategories.categoryID = invGroups.categoryID) LEFT JOIN chrRaces ON invTypes.raceID = chrRaces.raceID WHERE (((invCategories.categoryName) = '" + lCategory.Text + "') and typeName like '%" + tbSearch.Text + "%')";
+            string SQLQuery = "SELECT invTypes.typeID, invTypes.typeName,"+
+                " invGroups.groupName, chrRaces.raceName, invTypes.description"+
+                " FROM (invCategories RIGHT JOIN "+
+                "      (invTypes LEFT JOIN invGroups ON invTypes.groupID = invGroups.groupID)"+
+                " ON invCategories.categoryID = invGroups.categoryID)"+
+                " LEFT JOIN chrRaces ON invTypes.raceID = chrRaces.raceID "+
+                " WHERE (((invCategories.categoryName) = '" + lCategory.Text + "') "+
+                " AND typeName like '%" + tbSearch.Text + "%')";
 
             DataTable data = DBConnect.AQuery(SQLQuery);
             String[] item = new string[data.Columns.Count];
@@ -60,9 +67,9 @@ namespace Evemu_DB_Editor.src.gui {
 
         private void btEdit_Click(object sender, EventArgs e)
         {
-            itemAddEdit add = new itemAddEdit();
-            add.Show();
-            add.extractItemInfo(int.Parse(lvItems.SelectedItems[0].SubItems[0].Text));
+            frItemEditor editor = new frItemEditor();
+            editor.ShowDialog();
+            editor.extractItemInfo(int.Parse(lvItems.SelectedItems[0].SubItems[0].Text));
         }
 
         private void lCategory_SelectedIndexChanged(object sender, EventArgs e)
@@ -94,22 +101,13 @@ namespace Evemu_DB_Editor.src.gui {
 
         private void lvItems_DblClick(object sender, EventArgs e)
         {
-            foreach (ListViewItem SelectedItem in lvItems.SelectedItems)
-            {
-                itemAddEdit add = new itemAddEdit();
-                add.Show();
-                add.extractItemInfo(int.Parse(lvItems.SelectedItems[0].SubItems[0].Text));
-            }
+            btEdit_Click(sender, e);
         }
 
         private void miCopy_Click(object sender, EventArgs e)
         {
             DataTable FindNewID = DBConnect.AQuery("SELECT max(typeID) from invTypes");
-            int newid = 0;
-            foreach (DataRow record in FindNewID.Rows)
-            {
-                newid = Convert.ToInt16(record[0].ToString()) + 1;
-            }
+            int newid =  Int16.Parse(FindNewID.Rows[0].ToString() ) ;
 
             foreach (ListViewItem SelectedItem in lvItems.SelectedItems)
             {
@@ -121,9 +119,9 @@ namespace Evemu_DB_Editor.src.gui {
             }
             lCategory_SelectedIndexChanged(null, null);
 
-            itemAddEdit add = new itemAddEdit();
-            add.Show();
-            add.extractItemInfo(newid);
+            frItemEditor editor = new frItemEditor();
+            editor.Show();
+            editor.extractItemInfo(newid);
         }
 
         private void miEdit_Click(object sender, EventArgs e)

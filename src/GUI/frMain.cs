@@ -44,6 +44,12 @@ namespace Evemu_DB_Editor
         internal string connection;
         internal bool recordqueries = false;
 
+
+        public static void showNotConnected() {
+            MessageBox.Show("Please connect to the database!", "Not conneced!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //accountTab.SelectedIndex = 0;
+        }
+
         #region Main
         public frMain()
         {
@@ -105,11 +111,6 @@ namespace Evemu_DB_Editor
             }
         }
 
-        private void showNotConnected() {
-            MessageBox.Show("Please connect to the database!", "Not conneced!", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            accountTab.SelectedIndex = 0;
-        }
-
         #endregion
 
         #region File Tab
@@ -141,8 +142,15 @@ namespace Evemu_DB_Editor
 
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Founded by: Hurracane @ forum.evemu.org\nAlpha Version.\n\nVersion: " + System.Reflection.Assembly.GetExecutingAssembly().
-         GetName().Version.ToString());
+            MessageBox.Show(
+                "EVEMU Control Panel\n"+
+                "Crucible edition\n\n"+
+                "Version: " + 
+                System.Reflection.Assembly.GetExecutingAssembly().GetName().Version.ToString()+"\n\n"+
+                "Authors:\n"+
+                "   Hurracane @ forum.evemu.org\n"+
+                "   Positron @ forum.evemu.org\n",
+                "EVEMU Control Panel", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
@@ -165,18 +173,18 @@ namespace Evemu_DB_Editor
                 {
                     connectionStatusLbl.Text = "Connected";
                     connectionStatusLbl.ForeColor = Color.Green;
-                    connectionStatusToolTip.Text = "Connected To DB";
-                    connectionStatusToolTip.ForeColor = Color.Green;
+                    lbDBStatus.Text = "Connected To DB";
+                    lbDBStatus.ForeColor = Color.Green;
                     connectBtn.Enabled = false;
                     disconnectBtn.Enabled = true;
 
                     ((Control)tabAccount).Enabled = true;
                     ((Control)tabInsure).Enabled = true;
                     ((Control)tabItemEditor).Enabled = true;
-                    ((Control)raceTab).Enabled = true;
-                    ((Control)marketTab).Enabled = true;
-                    ((Control)oreTab).Enabled = true;
-                    ((Control)tabPage1).Enabled = true;
+                    ((Control)tabRace).Enabled = true;
+                    ((Control)tabMarket).Enabled = true;
+                    ((Control)tabOre).Enabled = true;
+                    ((Control)tabMarketGroups).Enabled = true;
 
                 }
                 else
@@ -193,8 +201,8 @@ namespace Evemu_DB_Editor
                 DBConnect.CloseConnection();
                 connectionStatusLbl.Text = "Disconnected";
                 connectionStatusLbl.ForeColor = Color.Black;
-                connectionStatusToolTip.Text = "Disconnected from DB";
-                connectionStatusToolTip.ForeColor = Color.Black;
+                lbDBStatus.Text = "Disconnected from DB";
+                lbDBStatus.ForeColor = Color.Black;
                 connectBtn.Enabled = true;
                 disconnectBtn.Enabled = false;
             }
@@ -202,10 +210,10 @@ namespace Evemu_DB_Editor
             ((Control)tabAccount).Enabled = false;
             ((Control)tabInsure).Enabled = false;
             ((Control)tabItemEditor).Enabled = false;
-            ((Control)raceTab).Enabled = false;
-            ((Control)marketTab).Enabled = false;
-            ((Control)oreTab).Enabled = false;
-            ((Control)tabPage1).Enabled = false;
+            ((Control)tabRace).Enabled = false;
+            ((Control)tabMarket).Enabled = false;
+            ((Control)tabOre).Enabled = false;
+            ((Control)tabMarketGroups).Enabled = false;
         }
 
         private void runSQLFileBtn_Click(object sender, EventArgs e)
@@ -746,7 +754,7 @@ namespace Evemu_DB_Editor
         {
             if (SelectedOretypeID.Text != "")
             {
-                itemAddEdit add = new itemAddEdit();
+                frItemEditor add = new frItemEditor();
                 add.Show();
                 add.extractItemInfo(Convert.ToInt16(SelectedOretypeID.Text));
             }

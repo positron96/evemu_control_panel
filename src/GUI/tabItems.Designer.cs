@@ -104,17 +104,17 @@
             // columnHeader2
             // 
             this.columnHeader2.Text = "typeName";
-            this.columnHeader2.Width = 127;
+            this.columnHeader2.Width = 187;
             // 
             // columnHeader3
             // 
             this.columnHeader3.Text = "Category";
-            this.columnHeader3.Width = 136;
+            this.columnHeader3.Width = 155;
             // 
             // columnHeader4
             // 
             this.columnHeader4.Text = "Race";
-            this.columnHeader4.Width = 55;
+            this.columnHeader4.Width = 66;
             // 
             // columnHeader5
             // 
@@ -205,6 +205,7 @@
             this.Controls.Add(this.label20);
             this.Name = "tabItems";
             this.Size = new System.Drawing.Size(792, 395);
+            this.Enter += new System.EventHandler(this.tabItems_Enter);
             this.mItems.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();

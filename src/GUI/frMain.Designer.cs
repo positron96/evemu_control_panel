@@ -46,8 +46,7 @@
             this.helpToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.connectionStatusToolTip = new System.Windows.Forms.ToolStripMenuItem();
-            this.accountTab = new System.Windows.Forms.TabControl();
+            this.tabControl = new System.Windows.Forms.TabControl();
             this.tabSQL = new System.Windows.Forms.TabPage();
             this.label55 = new System.Windows.Forms.Label();
             this.createDatabaseBtn = new System.Windows.Forms.Button();
@@ -76,9 +75,7 @@
             this.hostTextBox = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.tabAccount = new System.Windows.Forms.TabPage();
-            this.tabAcct1 = new Evemu_DB_Editor.src.GUI.tabAcct();
             this.tabItemEditor = new System.Windows.Forms.TabPage();
-            this.tabItems1 = new Evemu_DB_Editor.src.gui.tabItems();
             this.tabInsure = new System.Windows.Forms.TabPage();
             this.label12 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
@@ -88,7 +85,7 @@
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.label8 = new System.Windows.Forms.Label();
             this.insuranceProgressBar = new System.Windows.Forms.ProgressBar();
-            this.raceTab = new System.Windows.Forms.TabPage();
+            this.tabRace = new System.Windows.Forms.TabPage();
             this.ancestryDetails = new System.Windows.Forms.GroupBox();
             this.ancestryNameTxtBox = new System.Windows.Forms.TextBox();
             this.label33 = new System.Windows.Forms.Label();
@@ -137,7 +134,7 @@
             this.bloodlineDropdown = new System.Windows.Forms.ComboBox();
             this.raceDropdown = new System.Windows.Forms.ComboBox();
             this.label22 = new System.Windows.Forms.Label();
-            this.marketTab = new System.Windows.Forms.TabPage();
+            this.tabMarket = new System.Windows.Forms.TabPage();
             this.button10 = new System.Windows.Forms.Button();
             this.label44 = new System.Windows.Forms.Label();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
@@ -184,7 +181,7 @@
             this.columnHeader37 = new System.Windows.Forms.ColumnHeader();
             this.columnHeader38 = new System.Windows.Forms.ColumnHeader();
             this.label6 = new System.Windows.Forms.Label();
-            this.oreTab = new System.Windows.Forms.TabPage();
+            this.tabOre = new System.Windows.Forms.TabPage();
             this.SelectedOretypeID = new System.Windows.Forms.TextBox();
             this.button7 = new System.Windows.Forms.Button();
             this.mineralView = new System.Windows.Forms.ListView();
@@ -199,14 +196,14 @@
             this.label38 = new System.Windows.Forms.Label();
             this.label37 = new System.Windows.Forms.Label();
             this.SELECTOre = new System.Windows.Forms.ComboBox();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tabMarketGroups = new System.Windows.Forms.TabPage();
             this.label41 = new System.Windows.Forms.Label();
             this.marketGroupsTree = new System.Windows.Forms.TreeView();
             this.marketGroupsContext = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.renameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addMarketGroupToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.deleteMarketGroupToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.tabServerCfg = new System.Windows.Forms.TabPage();
             this.button8 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.groupBox811 = new System.Windows.Forms.GroupBox();
@@ -238,7 +235,7 @@
             this.dbPass = new System.Windows.Forms.TextBox();
             this.dbUser = new System.Windows.Forms.TextBox();
             this.dbHost = new System.Windows.Forms.TextBox();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.tabStuff = new System.Windows.Forms.TabPage();
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.stuffFiles = new System.Windows.Forms.ListView();
@@ -262,7 +259,7 @@
             this.models = new System.Windows.Forms.ListView();
             this.columnHeader31 = new System.Windows.Forms.ColumnHeader();
             this.columnHeader32 = new System.Windows.Forms.ColumnHeader();
-            this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.tabServerCtl = new System.Windows.Forms.TabPage();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.label51 = new System.Windows.Forms.Label();
             this.label50 = new System.Windows.Forms.Label();
@@ -284,8 +281,12 @@
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.openFileDialog2 = new System.Windows.Forms.OpenFileDialog();
+            this.statusBar = new System.Windows.Forms.StatusStrip();
+            this.lbDBStatus = new System.Windows.Forms.ToolStripStatusLabel();
+            this.tabAcct1 = new Evemu_DB_Editor.src.GUI.tabAcct();
+            this.tabItems1 = new Evemu_DB_Editor.src.gui.tabItems();
             this.menuStrip1.SuspendLayout();
-            this.accountTab.SuspendLayout();
+            this.tabControl.SuspendLayout();
             this.tabSQL.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -294,43 +295,42 @@
             this.tabInsure.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
-            this.raceTab.SuspendLayout();
+            this.tabRace.SuspendLayout();
             this.ancestryDetails.SuspendLayout();
             this.bloodlineStartingStats.SuspendLayout();
             this.bloodlineDetails.SuspendLayout();
             this.raceDetails.SuspendLayout();
             this.RaceSkillContext.SuspendLayout();
-            this.marketTab.SuspendLayout();
+            this.tabMarket.SuspendLayout();
             this.groupBox5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize) (this.trackBar1)).BeginInit();
             this.tabBelts.SuspendLayout();
-            this.oreTab.SuspendLayout();
+            this.tabOre.SuspendLayout();
             this.oreMenuStrip.SuspendLayout();
-            this.tabPage1.SuspendLayout();
+            this.tabMarketGroups.SuspendLayout();
             this.marketGroupsContext.SuspendLayout();
-            this.tabPage2.SuspendLayout();
+            this.tabServerCfg.SuspendLayout();
             this.groupBox811.SuspendLayout();
             this.groupBox711.SuspendLayout();
             this.groupBox611.SuspendLayout();
             this.groupBox511.SuspendLayout();
-            this.tabPage3.SuspendLayout();
+            this.tabStuff.SuspendLayout();
             this.tabControl2.SuspendLayout();
             this.tabPage4.SuspendLayout();
             this.tabPage5.SuspendLayout();
-            this.tabPage6.SuspendLayout();
+            this.tabServerCtl.SuspendLayout();
             this.groupBox6.SuspendLayout();
             this.contextMenuStrip2.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
+            this.statusBar.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
             // 
-            this.menuStrip1.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
             this.editToolStripMenuItem,
-            this.helpToolStripMenuItem,
-            this.connectionStatusToolTip});
+            this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(889, 24);
@@ -432,52 +432,45 @@
             // helpToolStripMenuItem1
             // 
             this.helpToolStripMenuItem1.Name = "helpToolStripMenuItem1";
-            this.helpToolStripMenuItem1.Size = new System.Drawing.Size(109, 22);
+            this.helpToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
             this.helpToolStripMenuItem1.Text = "Help!";
             this.helpToolStripMenuItem1.Click += new System.EventHandler(this.helpToolStripMenuItem1_Click);
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(106, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(149, 6);
             // 
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(109, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.aboutToolStripMenuItem.Text = "About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
-            // connectionStatusToolTip
+            // tabControl
             // 
-            this.connectionStatusToolTip.Enabled = false;
-            this.connectionStatusToolTip.Name = "connectionStatusToolTip";
-            this.connectionStatusToolTip.Size = new System.Drawing.Size(145, 20);
-            this.connectionStatusToolTip.Text = "Disconnected from DB";
-            // 
-            // accountTab
-            // 
-            this.accountTab.Anchor = ((System.Windows.Forms.AnchorStyles) ((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            this.tabControl.Anchor = ((System.Windows.Forms.AnchorStyles) ((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
                         | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
-            this.accountTab.Controls.Add(this.tabSQL);
-            this.accountTab.Controls.Add(this.tabAccount);
-            this.accountTab.Controls.Add(this.tabItemEditor);
-            this.accountTab.Controls.Add(this.tabInsure);
-            this.accountTab.Controls.Add(this.raceTab);
-            this.accountTab.Controls.Add(this.marketTab);
-            this.accountTab.Controls.Add(this.tabBelts);
-            this.accountTab.Controls.Add(this.oreTab);
-            this.accountTab.Controls.Add(this.tabPage1);
-            this.accountTab.Controls.Add(this.tabPage2);
-            this.accountTab.Controls.Add(this.tabPage3);
-            this.accountTab.Controls.Add(this.tabPage6);
-            this.accountTab.Location = new System.Drawing.Point(12, 27);
-            this.accountTab.Multiline = true;
-            this.accountTab.Name = "accountTab";
-            this.accountTab.SelectedIndex = 0;
-            this.accountTab.Size = new System.Drawing.Size(865, 565);
-            this.accountTab.TabIndex = 5;
+            this.tabControl.Controls.Add(this.tabSQL);
+            this.tabControl.Controls.Add(this.tabAccount);
+            this.tabControl.Controls.Add(this.tabItemEditor);
+            this.tabControl.Controls.Add(this.tabMarketGroups);
+            this.tabControl.Controls.Add(this.tabMarket);
+            this.tabControl.Controls.Add(this.tabBelts);
+            this.tabControl.Controls.Add(this.tabInsure);
+            this.tabControl.Controls.Add(this.tabRace);
+            this.tabControl.Controls.Add(this.tabOre);
+            this.tabControl.Controls.Add(this.tabStuff);
+            this.tabControl.Controls.Add(this.tabServerCfg);
+            this.tabControl.Controls.Add(this.tabServerCtl);
+            this.tabControl.Location = new System.Drawing.Point(0, 27);
+            this.tabControl.Multiline = true;
+            this.tabControl.Name = "tabControl";
+            this.tabControl.SelectedIndex = 0;
+            this.tabControl.Size = new System.Drawing.Size(889, 552);
+            this.tabControl.TabIndex = 5;
             // 
             // tabSQL
             // 
@@ -497,7 +490,7 @@
             this.tabSQL.Location = new System.Drawing.Point(4, 40);
             this.tabSQL.Name = "tabSQL";
             this.tabSQL.Padding = new System.Windows.Forms.Padding(3);
-            this.tabSQL.Size = new System.Drawing.Size(857, 521);
+            this.tabSQL.Size = new System.Drawing.Size(881, 508);
             this.tabSQL.TabIndex = 5;
             this.tabSQL.Text = "SQL Settings";
             this.tabSQL.UseVisualStyleBackColor = true;
@@ -505,7 +498,7 @@
             // label55
             // 
             this.label55.AutoSize = true;
-            this.label55.Location = new System.Drawing.Point(8, 244);
+            this.label55.Location = new System.Drawing.Point(3, 268);
             this.label55.Name = "label55";
             this.label55.Size = new System.Drawing.Size(257, 13);
             this.label55.TabIndex = 16;
@@ -513,9 +506,9 @@
             // 
             // createDatabaseBtn
             // 
-            this.createDatabaseBtn.Location = new System.Drawing.Point(11, 260);
+            this.createDatabaseBtn.Location = new System.Drawing.Point(6, 289);
             this.createDatabaseBtn.Name = "createDatabaseBtn";
-            this.createDatabaseBtn.Size = new System.Drawing.Size(75, 43);
+            this.createDatabaseBtn.Size = new System.Drawing.Size(143, 32);
             this.createDatabaseBtn.TabIndex = 15;
             this.createDatabaseBtn.Text = "Create Database";
             this.createDatabaseBtn.UseVisualStyleBackColor = true;
@@ -524,7 +517,7 @@
             // label54
             // 
             this.label54.AutoSize = true;
-            this.label54.Location = new System.Drawing.Point(8, 62);
+            this.label54.Location = new System.Drawing.Point(8, 55);
             this.label54.Name = "label54";
             this.label54.Size = new System.Drawing.Size(216, 13);
             this.label54.TabIndex = 7;
@@ -757,53 +750,34 @@
             // tabAccount
             // 
             this.tabAccount.Controls.Add(this.tabAcct1);
-            this.tabAccount.Location = new System.Drawing.Point(4, 40);
+            this.tabAccount.Location = new System.Drawing.Point(4, 22);
             this.tabAccount.Name = "tabAccount";
             this.tabAccount.Padding = new System.Windows.Forms.Padding(3);
-            this.tabAccount.Size = new System.Drawing.Size(857, 521);
+            this.tabAccount.Size = new System.Drawing.Size(881, 526);
             this.tabAccount.TabIndex = 0;
             this.tabAccount.Text = "Account/Character Editor";
             this.tabAccount.UseVisualStyleBackColor = true;
             // 
-            // tabAcct1
-            // 
-            this.tabAcct1.Anchor = ((System.Windows.Forms.AnchorStyles) ((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.tabAcct1.Location = new System.Drawing.Point(3, 3);
-            this.tabAcct1.Name = "tabAcct1";
-            this.tabAcct1.Size = new System.Drawing.Size(828, 386);
-            this.tabAcct1.TabIndex = 0;
-            // 
             // tabItemEditor
             // 
             this.tabItemEditor.Controls.Add(this.tabItems1);
-            this.tabItemEditor.Location = new System.Drawing.Point(4, 40);
+            this.tabItemEditor.Location = new System.Drawing.Point(4, 22);
             this.tabItemEditor.Name = "tabItemEditor";
             this.tabItemEditor.Padding = new System.Windows.Forms.Padding(3);
-            this.tabItemEditor.Size = new System.Drawing.Size(857, 521);
+            this.tabItemEditor.Size = new System.Drawing.Size(881, 526);
             this.tabItemEditor.TabIndex = 7;
             this.tabItemEditor.Text = "Item/Ship Editor";
             this.tabItemEditor.UseVisualStyleBackColor = true;
-            // 
-            // tabItems1
-            // 
-            this.tabItems1.Anchor = ((System.Windows.Forms.AnchorStyles) (((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.tabItems1.Location = new System.Drawing.Point(0, 0);
-            this.tabItems1.Name = "tabItems1";
-            this.tabItems1.Size = new System.Drawing.Size(792, 395);
-            this.tabItems1.TabIndex = 0;
             // 
             // tabInsure
             // 
             this.tabInsure.Controls.Add(this.label12);
             this.tabInsure.Controls.Add(this.groupBox4);
             this.tabInsure.Controls.Add(this.groupBox3);
-            this.tabInsure.Location = new System.Drawing.Point(4, 40);
+            this.tabInsure.Location = new System.Drawing.Point(4, 22);
             this.tabInsure.Name = "tabInsure";
             this.tabInsure.Padding = new System.Windows.Forms.Padding(3);
-            this.tabInsure.Size = new System.Drawing.Size(857, 521);
+            this.tabInsure.Size = new System.Drawing.Size(881, 526);
             this.tabInsure.TabIndex = 4;
             this.tabInsure.Text = "Insurance Editor";
             this.tabInsure.UseVisualStyleBackColor = true;
@@ -884,30 +858,30 @@
             this.insuranceProgressBar.Size = new System.Drawing.Size(515, 23);
             this.insuranceProgressBar.TabIndex = 0;
             // 
-            // raceTab
+            // tabRace
             // 
-            this.raceTab.Controls.Add(this.ancestryDetails);
-            this.raceTab.Controls.Add(this.label33);
-            this.raceTab.Controls.Add(this.ancestryDropdown);
-            this.raceTab.Controls.Add(this.label32);
-            this.raceTab.Controls.Add(this.careerDropdown);
-            this.raceTab.Controls.Add(this.saveRaceChangesBtn);
-            this.raceTab.Controls.Add(this.bloodlineStartingStats);
-            this.raceTab.Controls.Add(this.bloodlineDetails);
-            this.raceTab.Controls.Add(this.label25);
-            this.raceTab.Controls.Add(this.label24);
-            this.raceTab.Controls.Add(this.raceDetails);
-            this.raceTab.Controls.Add(this.bloodlineDropdown);
-            this.raceTab.Controls.Add(this.raceDropdown);
-            this.raceTab.Controls.Add(this.label22);
-            this.raceTab.Location = new System.Drawing.Point(4, 40);
-            this.raceTab.Name = "raceTab";
-            this.raceTab.Padding = new System.Windows.Forms.Padding(3);
-            this.raceTab.Size = new System.Drawing.Size(857, 521);
-            this.raceTab.TabIndex = 8;
-            this.raceTab.Text = "Race/bloodline editor";
-            this.raceTab.UseVisualStyleBackColor = true;
-            this.raceTab.Enter += new System.EventHandler(this.raceTab_Enter);
+            this.tabRace.Controls.Add(this.ancestryDetails);
+            this.tabRace.Controls.Add(this.label33);
+            this.tabRace.Controls.Add(this.ancestryDropdown);
+            this.tabRace.Controls.Add(this.label32);
+            this.tabRace.Controls.Add(this.careerDropdown);
+            this.tabRace.Controls.Add(this.saveRaceChangesBtn);
+            this.tabRace.Controls.Add(this.bloodlineStartingStats);
+            this.tabRace.Controls.Add(this.bloodlineDetails);
+            this.tabRace.Controls.Add(this.label25);
+            this.tabRace.Controls.Add(this.label24);
+            this.tabRace.Controls.Add(this.raceDetails);
+            this.tabRace.Controls.Add(this.bloodlineDropdown);
+            this.tabRace.Controls.Add(this.raceDropdown);
+            this.tabRace.Controls.Add(this.label22);
+            this.tabRace.Location = new System.Drawing.Point(4, 22);
+            this.tabRace.Name = "tabRace";
+            this.tabRace.Padding = new System.Windows.Forms.Padding(3);
+            this.tabRace.Size = new System.Drawing.Size(881, 526);
+            this.tabRace.TabIndex = 8;
+            this.tabRace.Text = "Race/bloodline editor";
+            this.tabRace.UseVisualStyleBackColor = true;
+            this.tabRace.Enter += new System.EventHandler(this.raceTab_Enter);
             // 
             // ancestryDetails
             // 
@@ -1325,38 +1299,38 @@
             this.label22.TabIndex = 9;
             this.label22.Text = "Race and bloodline editor (Partially done)";
             // 
-            // marketTab
+            // tabMarket
             // 
-            this.marketTab.Controls.Add(this.button10);
-            this.marketTab.Controls.Add(this.label44);
-            this.marketTab.Controls.Add(this.groupBox5);
-            this.marketTab.Controls.Add(this.marketSecurityTxtBox);
-            this.marketTab.Controls.Add(this.radioButton4);
-            this.marketTab.Controls.Add(this.radioButton3);
-            this.marketTab.Controls.Add(this.label47);
-            this.marketTab.Controls.Add(this.label46);
-            this.marketTab.Controls.Add(this.label45);
-            this.marketTab.Controls.Add(this.label43);
-            this.marketTab.Controls.Add(this.trackBar1);
-            this.marketTab.Controls.Add(this.applyQueryToDBChkBox);
-            this.marketTab.Controls.Add(this.queryMarketSeedTxtBox);
-            this.marketTab.Controls.Add(this.Quantity);
-            this.marketTab.Controls.Add(this.marketQuantityTxtBox);
-            this.marketTab.Controls.Add(this.seedMarketBtn);
-            this.marketTab.Controls.Add(this.marketGroupsTxtBox);
-            this.marketTab.Controls.Add(this.marketCategoriesTxtBox);
-            this.marketTab.Controls.Add(this.marketSystemsTxtBox);
-            this.marketTab.Controls.Add(this.marketRegionsTxtBox);
-            this.marketTab.Controls.Add(this.marketRacesTxtBox);
-            this.marketTab.Controls.Add(this.label23);
-            this.marketTab.Location = new System.Drawing.Point(4, 40);
-            this.marketTab.Name = "marketTab";
-            this.marketTab.Padding = new System.Windows.Forms.Padding(3);
-            this.marketTab.Size = new System.Drawing.Size(857, 521);
-            this.marketTab.TabIndex = 9;
-            this.marketTab.Text = "Seed market";
-            this.marketTab.UseVisualStyleBackColor = true;
-            this.marketTab.Enter += new System.EventHandler(this.marketTab_Enter);
+            this.tabMarket.Controls.Add(this.button10);
+            this.tabMarket.Controls.Add(this.label44);
+            this.tabMarket.Controls.Add(this.groupBox5);
+            this.tabMarket.Controls.Add(this.marketSecurityTxtBox);
+            this.tabMarket.Controls.Add(this.radioButton4);
+            this.tabMarket.Controls.Add(this.radioButton3);
+            this.tabMarket.Controls.Add(this.label47);
+            this.tabMarket.Controls.Add(this.label46);
+            this.tabMarket.Controls.Add(this.label45);
+            this.tabMarket.Controls.Add(this.label43);
+            this.tabMarket.Controls.Add(this.trackBar1);
+            this.tabMarket.Controls.Add(this.applyQueryToDBChkBox);
+            this.tabMarket.Controls.Add(this.queryMarketSeedTxtBox);
+            this.tabMarket.Controls.Add(this.Quantity);
+            this.tabMarket.Controls.Add(this.marketQuantityTxtBox);
+            this.tabMarket.Controls.Add(this.seedMarketBtn);
+            this.tabMarket.Controls.Add(this.marketGroupsTxtBox);
+            this.tabMarket.Controls.Add(this.marketCategoriesTxtBox);
+            this.tabMarket.Controls.Add(this.marketSystemsTxtBox);
+            this.tabMarket.Controls.Add(this.marketRegionsTxtBox);
+            this.tabMarket.Controls.Add(this.marketRacesTxtBox);
+            this.tabMarket.Controls.Add(this.label23);
+            this.tabMarket.Location = new System.Drawing.Point(4, 22);
+            this.tabMarket.Name = "tabMarket";
+            this.tabMarket.Padding = new System.Windows.Forms.Padding(3);
+            this.tabMarket.Size = new System.Drawing.Size(881, 526);
+            this.tabMarket.TabIndex = 9;
+            this.tabMarket.Text = "Seed market";
+            this.tabMarket.UseVisualStyleBackColor = true;
+            this.tabMarket.Enter += new System.EventHandler(this.marketTab_Enter);
             // 
             // button10
             // 
@@ -1677,10 +1651,10 @@
             this.tabBelts.Controls.Add(this.lvBeltSystems);
             this.tabBelts.Controls.Add(this.lvBeltBelts);
             this.tabBelts.Controls.Add(this.label6);
-            this.tabBelts.Location = new System.Drawing.Point(4, 40);
+            this.tabBelts.Location = new System.Drawing.Point(4, 22);
             this.tabBelts.Name = "tabBelts";
             this.tabBelts.Padding = new System.Windows.Forms.Padding(3);
-            this.tabBelts.Size = new System.Drawing.Size(857, 521);
+            this.tabBelts.Size = new System.Drawing.Size(881, 526);
             this.tabBelts.TabIndex = 15;
             this.tabBelts.Text = "Seed belts";
             this.tabBelts.UseVisualStyleBackColor = true;
@@ -1777,22 +1751,22 @@
             this.label6.TabIndex = 14;
             this.label6.Text = "Asteroid belt seed";
             // 
-            // oreTab
+            // tabOre
             // 
-            this.oreTab.Controls.Add(this.SelectedOretypeID);
-            this.oreTab.Controls.Add(this.button7);
-            this.oreTab.Controls.Add(this.mineralView);
-            this.oreTab.Controls.Add(this.label38);
-            this.oreTab.Controls.Add(this.label37);
-            this.oreTab.Controls.Add(this.SELECTOre);
-            this.oreTab.Location = new System.Drawing.Point(4, 40);
-            this.oreTab.Name = "oreTab";
-            this.oreTab.Padding = new System.Windows.Forms.Padding(3);
-            this.oreTab.Size = new System.Drawing.Size(857, 521);
-            this.oreTab.TabIndex = 10;
-            this.oreTab.Text = "Ore editor";
-            this.oreTab.UseVisualStyleBackColor = true;
-            this.oreTab.Enter += new System.EventHandler(this.oreTab_Enter);
+            this.tabOre.Controls.Add(this.SelectedOretypeID);
+            this.tabOre.Controls.Add(this.button7);
+            this.tabOre.Controls.Add(this.mineralView);
+            this.tabOre.Controls.Add(this.label38);
+            this.tabOre.Controls.Add(this.label37);
+            this.tabOre.Controls.Add(this.SELECTOre);
+            this.tabOre.Location = new System.Drawing.Point(4, 22);
+            this.tabOre.Name = "tabOre";
+            this.tabOre.Padding = new System.Windows.Forms.Padding(3);
+            this.tabOre.Size = new System.Drawing.Size(881, 526);
+            this.tabOre.TabIndex = 10;
+            this.tabOre.Text = "Ore editor";
+            this.tabOre.UseVisualStyleBackColor = true;
+            this.tabOre.Enter += new System.EventHandler(this.oreTab_Enter);
             // 
             // SelectedOretypeID
             // 
@@ -1907,18 +1881,18 @@
             this.SELECTOre.TabIndex = 0;
             this.SELECTOre.SelectedIndexChanged += new System.EventHandler(this.SELECTOre_SelectedIndexChanged);
             // 
-            // tabPage1
+            // tabMarketGroups
             // 
-            this.tabPage1.Controls.Add(this.label41);
-            this.tabPage1.Controls.Add(this.marketGroupsTree);
-            this.tabPage1.Location = new System.Drawing.Point(4, 40);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(857, 521);
-            this.tabPage1.TabIndex = 11;
-            this.tabPage1.Text = "Market groups";
-            this.tabPage1.UseVisualStyleBackColor = true;
-            this.tabPage1.Enter += new System.EventHandler(this.tabPage1_Enter);
+            this.tabMarketGroups.Controls.Add(this.label41);
+            this.tabMarketGroups.Controls.Add(this.marketGroupsTree);
+            this.tabMarketGroups.Location = new System.Drawing.Point(4, 22);
+            this.tabMarketGroups.Name = "tabMarketGroups";
+            this.tabMarketGroups.Padding = new System.Windows.Forms.Padding(3);
+            this.tabMarketGroups.Size = new System.Drawing.Size(881, 526);
+            this.tabMarketGroups.TabIndex = 11;
+            this.tabMarketGroups.Text = "Market groups";
+            this.tabMarketGroups.UseVisualStyleBackColor = true;
+            this.tabMarketGroups.Enter += new System.EventHandler(this.tabPage1_Enter);
             // 
             // label41
             // 
@@ -1970,21 +1944,21 @@
             this.deleteMarketGroupToolStripMenuItem.Text = "Delete";
             this.deleteMarketGroupToolStripMenuItem.Click += new System.EventHandler(this.deleteMarketGroupToolStripMenuItem_Click);
             // 
-            // tabPage2
+            // tabServerCfg
             // 
-            this.tabPage2.Controls.Add(this.button8);
-            this.tabPage2.Controls.Add(this.button9);
-            this.tabPage2.Controls.Add(this.groupBox811);
-            this.tabPage2.Controls.Add(this.groupBox711);
-            this.tabPage2.Controls.Add(this.groupBox611);
-            this.tabPage2.Controls.Add(this.groupBox511);
-            this.tabPage2.Location = new System.Drawing.Point(4, 40);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(857, 521);
-            this.tabPage2.TabIndex = 12;
-            this.tabPage2.Text = "EvEMU Server Configuration";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            this.tabServerCfg.Controls.Add(this.button8);
+            this.tabServerCfg.Controls.Add(this.button9);
+            this.tabServerCfg.Controls.Add(this.groupBox811);
+            this.tabServerCfg.Controls.Add(this.groupBox711);
+            this.tabServerCfg.Controls.Add(this.groupBox611);
+            this.tabServerCfg.Controls.Add(this.groupBox511);
+            this.tabServerCfg.Location = new System.Drawing.Point(4, 40);
+            this.tabServerCfg.Name = "tabServerCfg";
+            this.tabServerCfg.Padding = new System.Windows.Forms.Padding(3);
+            this.tabServerCfg.Size = new System.Drawing.Size(881, 508);
+            this.tabServerCfg.TabIndex = 12;
+            this.tabServerCfg.Text = "Server Configuration";
+            this.tabServerCfg.UseVisualStyleBackColor = true;
             // 
             // button8
             // 
@@ -2270,16 +2244,16 @@
             this.dbHost.Size = new System.Drawing.Size(100, 20);
             this.dbHost.TabIndex = 6;
             // 
-            // tabPage3
+            // tabStuff
             // 
-            this.tabPage3.Controls.Add(this.tabControl2);
-            this.tabPage3.Location = new System.Drawing.Point(4, 40);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(857, 521);
-            this.tabPage3.TabIndex = 13;
-            this.tabPage3.Text = "Stuff Editor";
-            this.tabPage3.UseVisualStyleBackColor = true;
+            this.tabStuff.Controls.Add(this.tabControl2);
+            this.tabStuff.Location = new System.Drawing.Point(4, 22);
+            this.tabStuff.Name = "tabStuff";
+            this.tabStuff.Padding = new System.Windows.Forms.Padding(3);
+            this.tabStuff.Size = new System.Drawing.Size(881, 526);
+            this.tabStuff.TabIndex = 13;
+            this.tabStuff.Text = "Stuff Editor";
+            this.tabStuff.UseVisualStyleBackColor = true;
             // 
             // tabControl2
             // 
@@ -2503,16 +2477,16 @@
             // 
             this.columnHeader32.Width = 0;
             // 
-            // tabPage6
+            // tabServerCtl
             // 
-            this.tabPage6.Controls.Add(this.groupBox6);
-            this.tabPage6.Location = new System.Drawing.Point(4, 40);
-            this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(857, 521);
-            this.tabPage6.TabIndex = 14;
-            this.tabPage6.Text = "Server Control Panel";
-            this.tabPage6.UseVisualStyleBackColor = true;
+            this.tabServerCtl.Controls.Add(this.groupBox6);
+            this.tabServerCtl.Location = new System.Drawing.Point(4, 40);
+            this.tabServerCtl.Name = "tabServerCtl";
+            this.tabServerCtl.Padding = new System.Windows.Forms.Padding(3);
+            this.tabServerCtl.Size = new System.Drawing.Size(881, 508);
+            this.tabServerCtl.TabIndex = 14;
+            this.tabServerCtl.Text = "Server Control";
+            this.tabServerCtl.UseVisualStyleBackColor = true;
             // 
             // groupBox6
             // 
@@ -2676,13 +2650,50 @@
             // 
             this.openFileDialog2.FileName = "openFileDialog2";
             // 
+            // statusBar
+            // 
+            this.statusBar.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.lbDBStatus});
+            this.statusBar.Location = new System.Drawing.Point(0, 582);
+            this.statusBar.Name = "statusBar";
+            this.statusBar.Size = new System.Drawing.Size(889, 22);
+            this.statusBar.TabIndex = 6;
+            this.statusBar.Text = "statusStrip1";
+            // 
+            // lbDBStatus
+            // 
+            this.lbDBStatus.Name = "lbDBStatus";
+            this.lbDBStatus.Size = new System.Drawing.Size(123, 17);
+            this.lbDBStatus.Text = "Not connected to DB";
+            // 
+            // tabAcct1
+            // 
+            this.tabAcct1.Anchor = ((System.Windows.Forms.AnchorStyles) ((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.tabAcct1.Location = new System.Drawing.Point(3, 3);
+            this.tabAcct1.Name = "tabAcct1";
+            this.tabAcct1.Size = new System.Drawing.Size(852, 661);
+            this.tabAcct1.TabIndex = 0;
+            // 
+            // tabItems1
+            // 
+            this.tabItems1.Anchor = ((System.Windows.Forms.AnchorStyles) ((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.tabItems1.Location = new System.Drawing.Point(0, 0);
+            this.tabItems1.Name = "tabItems1";
+            this.tabItems1.Size = new System.Drawing.Size(881, 544);
+            this.tabItems1.TabIndex = 0;
+            // 
             // frMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(889, 604);
             this.ContextMenuStrip = this.contextMenuStrip1;
-            this.Controls.Add(this.accountTab);
+            this.Controls.Add(this.statusBar);
+            this.Controls.Add(this.tabControl);
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon) (resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
@@ -2692,7 +2703,7 @@
             this.ResizeEnd += new System.EventHandler(this.main_ResizeEnd);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            this.accountTab.ResumeLayout(false);
+            this.tabControl.ResumeLayout(false);
             this.tabSQL.ResumeLayout(false);
             this.tabSQL.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -2706,8 +2717,8 @@
             this.groupBox4.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
-            this.raceTab.ResumeLayout(false);
-            this.raceTab.PerformLayout();
+            this.tabRace.ResumeLayout(false);
+            this.tabRace.PerformLayout();
             this.ancestryDetails.ResumeLayout(false);
             this.ancestryDetails.PerformLayout();
             this.bloodlineStartingStats.ResumeLayout(false);
@@ -2717,20 +2728,20 @@
             this.raceDetails.ResumeLayout(false);
             this.raceDetails.PerformLayout();
             this.RaceSkillContext.ResumeLayout(false);
-            this.marketTab.ResumeLayout(false);
-            this.marketTab.PerformLayout();
+            this.tabMarket.ResumeLayout(false);
+            this.tabMarket.PerformLayout();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize) (this.trackBar1)).EndInit();
             this.tabBelts.ResumeLayout(false);
             this.tabBelts.PerformLayout();
-            this.oreTab.ResumeLayout(false);
-            this.oreTab.PerformLayout();
+            this.tabOre.ResumeLayout(false);
+            this.tabOre.PerformLayout();
             this.oreMenuStrip.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
-            this.tabPage1.PerformLayout();
+            this.tabMarketGroups.ResumeLayout(false);
+            this.tabMarketGroups.PerformLayout();
             this.marketGroupsContext.ResumeLayout(false);
-            this.tabPage2.ResumeLayout(false);
+            this.tabServerCfg.ResumeLayout(false);
             this.groupBox811.ResumeLayout(false);
             this.groupBox811.PerformLayout();
             this.groupBox711.ResumeLayout(false);
@@ -2739,16 +2750,18 @@
             this.groupBox611.PerformLayout();
             this.groupBox511.ResumeLayout(false);
             this.groupBox511.PerformLayout();
-            this.tabPage3.ResumeLayout(false);
+            this.tabStuff.ResumeLayout(false);
             this.tabControl2.ResumeLayout(false);
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
             this.tabPage5.ResumeLayout(false);
-            this.tabPage6.ResumeLayout(false);
+            this.tabServerCtl.ResumeLayout(false);
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
             this.contextMenuStrip2.ResumeLayout(false);
             this.contextMenuStrip1.ResumeLayout(false);
+            this.statusBar.ResumeLayout(false);
+            this.statusBar.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2760,10 +2773,9 @@
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem editToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
-        private System.Windows.Forms.TabControl accountTab;
+        private System.Windows.Forms.TabControl tabControl;
         private System.Windows.Forms.TabPage tabAccount;
         private System.Windows.Forms.TabPage tabInsure;
-        private System.Windows.Forms.ToolStripMenuItem connectionStatusToolTip;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.Button goBtn;
         private System.Windows.Forms.TextBox percentTxtBox;
@@ -2804,9 +2816,9 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
         private System.Windows.Forms.ToolStripMenuItem disconnectToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem saveLogonInformationToolStripMenuItem;
-        private System.Windows.Forms.TabPage raceTab;
+        private System.Windows.Forms.TabPage tabRace;
         private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.TabPage marketTab;
+        private System.Windows.Forms.TabPage tabMarket;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.ComboBox bloodlineDropdown;
         private System.Windows.Forms.ComboBox raceDropdown;
@@ -2873,7 +2885,7 @@
         private System.Windows.Forms.ToolStripMenuItem addToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem modifyToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem recordQueriesDisabledToolStripMenuItem;
-        private System.Windows.Forms.TabPage oreTab;
+        private System.Windows.Forms.TabPage tabOre;
         private System.Windows.Forms.ComboBox SELECTOre;
         private System.Windows.Forms.ListView mineralView;
         private System.Windows.Forms.Label label38;
@@ -2893,7 +2905,7 @@
         private System.Windows.Forms.ToolStripMenuItem editAccountToolStripMenuItem1;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
         private System.Windows.Forms.ToolStripMenuItem deleteAccountToolStripMenuItem1;
-        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.TabPage tabMarketGroups;
         private System.Windows.Forms.TreeView marketGroupsTree;
         private System.Windows.Forms.ContextMenuStrip marketGroupsContext;
         private System.Windows.Forms.ToolStripMenuItem renameToolStripMenuItem;
@@ -2915,7 +2927,7 @@
         private System.Windows.Forms.Label label47;
         private System.Windows.Forms.ColumnHeader columnHeader29;
         private System.Windows.Forms.GroupBox groupBox5;
-        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.TabPage tabServerCfg;
         private System.Windows.Forms.Label label4511;
         private System.Windows.Forms.TextBox dbUser;
         private System.Windows.Forms.TextBox dbHost;
@@ -2949,7 +2961,7 @@
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Label label44;
         private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.TabPage tabStuff;
         private System.Windows.Forms.TabControl tabControl2;
         private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.ProgressBar progressBar2;
@@ -2974,7 +2986,7 @@
         private System.Windows.Forms.ColumnHeader columnHeader32;
         private System.Windows.Forms.ListView stuffFiles;
         private System.Windows.Forms.ColumnHeader columnHeader33;
-        private System.Windows.Forms.TabPage tabPage6;
+        private System.Windows.Forms.TabPage tabServerCtl;
         private System.Windows.Forms.GroupBox groupBox6;
         private System.Windows.Forms.TextBox serverDir;
         private System.Windows.Forms.Button button18;
@@ -3010,6 +3022,8 @@
         private System.Windows.Forms.ColumnHeader columnHeader39;
         private Evemu_DB_Editor.src.GUI.tabAcct tabAcct1;
         private Evemu_DB_Editor.src.gui.tabItems tabItems1;
+        private System.Windows.Forms.StatusStrip statusBar;
+        private System.Windows.Forms.ToolStripStatusLabel lbDBStatus;
     }
 }
 

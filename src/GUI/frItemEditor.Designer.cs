@@ -25,7 +25,7 @@ http://www.gnu.org/copyleft/lesser.txt.
 
 namespace Evemu_DB_Editor
 {
-    partial class itemAddEdit
+    partial class frItemEditor
     {
         /// <summary>
         /// Required designer variable.
@@ -55,35 +55,35 @@ namespace Evemu_DB_Editor
         {
             this.components = new System.ComponentModel.Container();
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.groupSelector = new System.Windows.Forms.ComboBox();
-            this.marketGroupSelector = new System.Windows.Forms.ComboBox();
-            this.button5 = new System.Windows.Forms.Button();
-            this.itemRefresh = new System.Windows.Forms.Button();
-            this.delete = new System.Windows.Forms.Button();
-            this.save = new System.Windows.Forms.Button();
-            this.chanceOfDuplicating = new System.Windows.Forms.TextBox();
-            this.marketGroupID = new System.Windows.Forms.TextBox();
-            this.published = new System.Windows.Forms.TextBox();
-            this.basePrice = new System.Windows.Forms.TextBox();
-            this.raceID = new System.Windows.Forms.TextBox();
-            this.capacity = new System.Windows.Forms.TextBox();
-            this.portionSize = new System.Windows.Forms.TextBox();
-            this.volume = new System.Windows.Forms.TextBox();
-            this.radius = new System.Windows.Forms.TextBox();
-            this.graphicID = new System.Windows.Forms.TextBox();
-            this.mass = new System.Windows.Forms.TextBox();
-            this.description = new System.Windows.Forms.TextBox();
-            this.groupID = new System.Windows.Forms.TextBox();
-            this.typeName = new System.Windows.Forms.TextBox();
-            this.typeID1 = new System.Windows.Forms.TextBox();
+            this.tabItemProperties = new System.Windows.Forms.TabPage();
+            this.lGroup = new System.Windows.Forms.ComboBox();
+            this.lMarketGroup = new System.Windows.Forms.ComboBox();
+            this.btHelp = new System.Windows.Forms.Button();
+            this.btRefresh = new System.Windows.Forms.Button();
+            this.btDelete = new System.Windows.Forms.Button();
+            this.btSave = new System.Windows.Forms.Button();
+            this.tbChanceOfDuplicating = new System.Windows.Forms.TextBox();
+            this.lbMarketGroupID = new System.Windows.Forms.TextBox();
+            this.tbPublished = new System.Windows.Forms.TextBox();
+            this.tbBasePrice = new System.Windows.Forms.TextBox();
+            this.tbRaceID = new System.Windows.Forms.TextBox();
+            this.tbCapacity = new System.Windows.Forms.TextBox();
+            this.tbPortionSize = new System.Windows.Forms.TextBox();
+            this.tbVolume = new System.Windows.Forms.TextBox();
+            this.tbRadius = new System.Windows.Forms.TextBox();
+            this.tbGraphicID = new System.Windows.Forms.TextBox();
+            this.tbMass = new System.Windows.Forms.TextBox();
+            this.tbDescription = new System.Windows.Forms.TextBox();
+            this.lbGroupID = new System.Windows.Forms.TextBox();
+            this.tbTypeName = new System.Windows.Forms.TextBox();
+            this.lbTypeID = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -91,268 +91,273 @@ namespace Evemu_DB_Editor
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.attributeAdd = new System.Windows.Forms.Button();
-            this.attributeChange = new System.Windows.Forms.Button();
-            this.attributeInt = new System.Windows.Forms.TextBox();
-            this.attributeFloat = new System.Windows.Forms.TextBox();
-            this.attributeID = new System.Windows.Forms.TextBox();
-            this.attributeDescription = new System.Windows.Forms.ComboBox();
-            this.itemAttributes = new System.Windows.Forms.ListView();
+            this.tabItemAttributes = new System.Windows.Forms.TabPage();
+            this.btAttributeAdd = new System.Windows.Forms.Button();
+            this.btAttributeChange = new System.Windows.Forms.Button();
+            this.tbAttributeInt = new System.Windows.Forms.TextBox();
+            this.tbAttributeFloat = new System.Windows.Forms.TextBox();
+            this.lblAttributeID = new System.Windows.Forms.TextBox();
+            this.lAttributeName = new System.Windows.Forms.ComboBox();
+            this.lvAttributes = new System.Windows.Forms.ListView();
             this.columnHeader1 = new System.Windows.Forms.ColumnHeader();
             this.columnHeader2 = new System.Windows.Forms.ColumnHeader();
             this.columnHeader3 = new System.Windows.Forms.ColumnHeader();
             this.columnHeader4 = new System.Windows.Forms.ColumnHeader();
-            this.itemAttributeContext = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.isDefault = new System.Windows.Forms.TextBox();
-            this.effectID = new System.Windows.Forms.TextBox();
-            this.effectDescription = new System.Windows.Forms.ComboBox();
-            this.itemEffects = new System.Windows.Forms.ListView();
+            this.mAttributes = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.miDeleteAttrib = new System.Windows.Forms.ToolStripMenuItem();
+            this.tabItemEffects = new System.Windows.Forms.TabPage();
+            this.btAddEffect = new System.Windows.Forms.Button();
+            this.btChangeEffect = new System.Windows.Forms.Button();
+            this.tbIsDefault = new System.Windows.Forms.TextBox();
+            this.lblEffectID = new System.Windows.Forms.TextBox();
+            this.lEffectDescription = new System.Windows.Forms.ComboBox();
+            this.lvEffects = new System.Windows.Forms.ListView();
             this.columnHeader5 = new System.Windows.Forms.ColumnHeader();
             this.columnHeader6 = new System.Windows.Forms.ColumnHeader();
             this.columnHeader7 = new System.Windows.Forms.ColumnHeader();
-            this.itemEffectContext = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.deleteToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.mEffects = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.miDeleteEffect = new System.Windows.Forms.ToolStripMenuItem();
             this.tabControl1.SuspendLayout();
-            this.tabPage1.SuspendLayout();
-            this.tabPage2.SuspendLayout();
-            this.itemAttributeContext.SuspendLayout();
-            this.tabPage3.SuspendLayout();
-            this.itemEffectContext.SuspendLayout();
+            this.tabItemProperties.SuspendLayout();
+            this.tabItemAttributes.SuspendLayout();
+            this.mAttributes.SuspendLayout();
+            this.tabItemEffects.SuspendLayout();
+            this.mEffects.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
             // 
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Controls.Add(this.tabPage3);
-            this.tabControl1.Location = new System.Drawing.Point(12, 12);
+            this.tabControl1.Anchor = ((System.Windows.Forms.AnchorStyles) ((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.tabControl1.Controls.Add(this.tabItemProperties);
+            this.tabControl1.Controls.Add(this.tabItemAttributes);
+            this.tabControl1.Controls.Add(this.tabItemEffects);
+            this.tabControl1.Location = new System.Drawing.Point(1, 2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(422, 500);
+            this.tabControl1.Size = new System.Drawing.Size(439, 510);
             this.tabControl1.TabIndex = 11;
             // 
-            // tabPage1
+            // tabItemProperties
             // 
-            this.tabPage1.Controls.Add(this.groupSelector);
-            this.tabPage1.Controls.Add(this.marketGroupSelector);
-            this.tabPage1.Controls.Add(this.button5);
-            this.tabPage1.Controls.Add(this.itemRefresh);
-            this.tabPage1.Controls.Add(this.delete);
-            this.tabPage1.Controls.Add(this.save);
-            this.tabPage1.Controls.Add(this.chanceOfDuplicating);
-            this.tabPage1.Controls.Add(this.marketGroupID);
-            this.tabPage1.Controls.Add(this.published);
-            this.tabPage1.Controls.Add(this.basePrice);
-            this.tabPage1.Controls.Add(this.raceID);
-            this.tabPage1.Controls.Add(this.capacity);
-            this.tabPage1.Controls.Add(this.portionSize);
-            this.tabPage1.Controls.Add(this.volume);
-            this.tabPage1.Controls.Add(this.radius);
-            this.tabPage1.Controls.Add(this.graphicID);
-            this.tabPage1.Controls.Add(this.mass);
-            this.tabPage1.Controls.Add(this.description);
-            this.tabPage1.Controls.Add(this.groupID);
-            this.tabPage1.Controls.Add(this.typeName);
-            this.tabPage1.Controls.Add(this.typeID1);
-            this.tabPage1.Controls.Add(this.label17);
-            this.tabPage1.Controls.Add(this.label16);
-            this.tabPage1.Controls.Add(this.label15);
-            this.tabPage1.Controls.Add(this.label14);
-            this.tabPage1.Controls.Add(this.label13);
-            this.tabPage1.Controls.Add(this.label12);
-            this.tabPage1.Controls.Add(this.label11);
-            this.tabPage1.Controls.Add(this.label9);
-            this.tabPage1.Controls.Add(this.label8);
-            this.tabPage1.Controls.Add(this.label7);
-            this.tabPage1.Controls.Add(this.label6);
-            this.tabPage1.Controls.Add(this.label5);
-            this.tabPage1.Controls.Add(this.label4);
-            this.tabPage1.Controls.Add(this.label3);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(414, 474);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Item Info";
-            this.tabPage1.UseVisualStyleBackColor = true;
+            this.tabItemProperties.Controls.Add(this.lGroup);
+            this.tabItemProperties.Controls.Add(this.lMarketGroup);
+            this.tabItemProperties.Controls.Add(this.btHelp);
+            this.tabItemProperties.Controls.Add(this.btRefresh);
+            this.tabItemProperties.Controls.Add(this.btDelete);
+            this.tabItemProperties.Controls.Add(this.btSave);
+            this.tabItemProperties.Controls.Add(this.tbChanceOfDuplicating);
+            this.tabItemProperties.Controls.Add(this.lbMarketGroupID);
+            this.tabItemProperties.Controls.Add(this.tbPublished);
+            this.tabItemProperties.Controls.Add(this.tbBasePrice);
+            this.tabItemProperties.Controls.Add(this.tbRaceID);
+            this.tabItemProperties.Controls.Add(this.tbCapacity);
+            this.tabItemProperties.Controls.Add(this.tbPortionSize);
+            this.tabItemProperties.Controls.Add(this.tbVolume);
+            this.tabItemProperties.Controls.Add(this.tbRadius);
+            this.tabItemProperties.Controls.Add(this.tbGraphicID);
+            this.tabItemProperties.Controls.Add(this.tbMass);
+            this.tabItemProperties.Controls.Add(this.tbDescription);
+            this.tabItemProperties.Controls.Add(this.lbGroupID);
+            this.tabItemProperties.Controls.Add(this.tbTypeName);
+            this.tabItemProperties.Controls.Add(this.lbTypeID);
+            this.tabItemProperties.Controls.Add(this.label17);
+            this.tabItemProperties.Controls.Add(this.label16);
+            this.tabItemProperties.Controls.Add(this.label15);
+            this.tabItemProperties.Controls.Add(this.label14);
+            this.tabItemProperties.Controls.Add(this.label13);
+            this.tabItemProperties.Controls.Add(this.label12);
+            this.tabItemProperties.Controls.Add(this.label2);
+            this.tabItemProperties.Controls.Add(this.label9);
+            this.tabItemProperties.Controls.Add(this.label8);
+            this.tabItemProperties.Controls.Add(this.label7);
+            this.tabItemProperties.Controls.Add(this.label6);
+            this.tabItemProperties.Controls.Add(this.label5);
+            this.tabItemProperties.Controls.Add(this.label4);
+            this.tabItemProperties.Controls.Add(this.label3);
+            this.tabItemProperties.Location = new System.Drawing.Point(4, 22);
+            this.tabItemProperties.Name = "tabItemProperties";
+            this.tabItemProperties.Padding = new System.Windows.Forms.Padding(3);
+            this.tabItemProperties.Size = new System.Drawing.Size(431, 484);
+            this.tabItemProperties.TabIndex = 0;
+            this.tabItemProperties.Text = "Item Info";
+            this.tabItemProperties.UseVisualStyleBackColor = true;
             // 
-            // groupSelector
+            // lGroup
             // 
-            this.groupSelector.DropDownWidth = 400;
-            this.groupSelector.FormattingEnabled = true;
-            this.groupSelector.Location = new System.Drawing.Point(220, 35);
-            this.groupSelector.Name = "groupSelector";
-            this.groupSelector.Size = new System.Drawing.Size(184, 21);
-            this.groupSelector.TabIndex = 36;
-            this.groupSelector.SelectedIndexChanged += new System.EventHandler(this.groupSelector_SelectedIndexChanged);
+            this.lGroup.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.lGroup.DropDownWidth = 400;
+            this.lGroup.FormattingEnabled = true;
+            this.lGroup.Location = new System.Drawing.Point(233, 35);
+            this.lGroup.Name = "lGroup";
+            this.lGroup.Size = new System.Drawing.Size(184, 21);
+            this.lGroup.TabIndex = 36;
+            this.lGroup.SelectedIndexChanged += new System.EventHandler(this.lGroup_SelectedIndexChanged);
             // 
-            // marketGroupSelector
+            // lMarketGroup
             // 
-            this.marketGroupSelector.DropDownWidth = 400;
-            this.marketGroupSelector.FormattingEnabled = true;
-            this.marketGroupSelector.Location = new System.Drawing.Point(220, 62);
-            this.marketGroupSelector.Name = "marketGroupSelector";
-            this.marketGroupSelector.Size = new System.Drawing.Size(184, 21);
-            this.marketGroupSelector.TabIndex = 35;
-            this.marketGroupSelector.SelectedIndexChanged += new System.EventHandler(this.marketGroupSelector_SelectedIndexChanged);
+            this.lMarketGroup.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.lMarketGroup.DropDownWidth = 400;
+            this.lMarketGroup.FormattingEnabled = true;
+            this.lMarketGroup.Location = new System.Drawing.Point(233, 62);
+            this.lMarketGroup.Name = "lMarketGroup";
+            this.lMarketGroup.Size = new System.Drawing.Size(184, 21);
+            this.lMarketGroup.TabIndex = 35;
+            this.lMarketGroup.SelectedIndexChanged += new System.EventHandler(this.lMarketGroup_SelectedIndexChanged);
             // 
-            // button5
+            // btHelp
             // 
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
-            this.button5.Location = new System.Drawing.Point(232, 433);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(172, 33);
-            this.button5.TabIndex = 34;
-            this.button5.Text = "Information/How To";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.btHelp.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (204)));
+            this.btHelp.Location = new System.Drawing.Point(245, 433);
+            this.btHelp.Name = "btHelp";
+            this.btHelp.Size = new System.Drawing.Size(172, 33);
+            this.btHelp.TabIndex = 34;
+            this.btHelp.Text = "Information/How To";
+            this.btHelp.UseVisualStyleBackColor = true;
+            this.btHelp.Click += new System.EventHandler(this.btHelp_Click);
             // 
-            // itemRefresh
+            // btRefresh
             // 
-            this.itemRefresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
-            this.itemRefresh.Location = new System.Drawing.Point(232, 397);
-            this.itemRefresh.Name = "itemRefresh";
-            this.itemRefresh.Size = new System.Drawing.Size(172, 33);
-            this.itemRefresh.TabIndex = 33;
-            this.itemRefresh.Text = "Item Refresh";
-            this.itemRefresh.UseVisualStyleBackColor = true;
-            this.itemRefresh.Click += new System.EventHandler(this.itemRefresh_Click);
+            this.btRefresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (204)));
+            this.btRefresh.Location = new System.Drawing.Point(245, 397);
+            this.btRefresh.Name = "btRefresh";
+            this.btRefresh.Size = new System.Drawing.Size(172, 33);
+            this.btRefresh.TabIndex = 33;
+            this.btRefresh.Text = "Item Refresh";
+            this.btRefresh.UseVisualStyleBackColor = true;
+            this.btRefresh.Click += new System.EventHandler(this.btRefresh_Click);
             // 
-            // delete
+            // btDelete
             // 
-            this.delete.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
-            this.delete.Location = new System.Drawing.Point(232, 358);
-            this.delete.Name = "delete";
-            this.delete.Size = new System.Drawing.Size(172, 33);
-            this.delete.TabIndex = 31;
-            this.delete.Text = "Delete";
-            this.delete.UseVisualStyleBackColor = true;
-            this.delete.Click += new System.EventHandler(this.delete_Click);
+            this.btDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (204)));
+            this.btDelete.Location = new System.Drawing.Point(245, 358);
+            this.btDelete.Name = "btDelete";
+            this.btDelete.Size = new System.Drawing.Size(172, 33);
+            this.btDelete.TabIndex = 31;
+            this.btDelete.Text = "Delete";
+            this.btDelete.UseVisualStyleBackColor = true;
+            this.btDelete.Click += new System.EventHandler(this.btDelete_Click);
             // 
-            // save
+            // btSave
             // 
-            this.save.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
-            this.save.Location = new System.Drawing.Point(232, 319);
-            this.save.Name = "save";
-            this.save.Size = new System.Drawing.Size(172, 33);
-            this.save.TabIndex = 30;
-            this.save.Text = "Save";
-            this.save.UseVisualStyleBackColor = true;
-            this.save.Click += new System.EventHandler(this.save_Click);
+            this.btSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (204)));
+            this.btSave.Location = new System.Drawing.Point(245, 319);
+            this.btSave.Name = "btSave";
+            this.btSave.Size = new System.Drawing.Size(172, 33);
+            this.btSave.TabIndex = 30;
+            this.btSave.Text = "Save";
+            this.btSave.UseVisualStyleBackColor = true;
+            this.btSave.Click += new System.EventHandler(this.btSave_Click);
             // 
-            // chanceOfDuplicating
+            // tbChanceOfDuplicating
             // 
-            this.chanceOfDuplicating.Location = new System.Drawing.Point(120, 112);
-            this.chanceOfDuplicating.Name = "chanceOfDuplicating";
-            this.chanceOfDuplicating.Size = new System.Drawing.Size(94, 20);
-            this.chanceOfDuplicating.TabIndex = 29;
+            this.tbChanceOfDuplicating.Location = new System.Drawing.Point(133, 112);
+            this.tbChanceOfDuplicating.Name = "tbChanceOfDuplicating";
+            this.tbChanceOfDuplicating.Size = new System.Drawing.Size(94, 20);
+            this.tbChanceOfDuplicating.TabIndex = 29;
             // 
-            // marketGroupID
+            // lbMarketGroupID
             // 
-            this.marketGroupID.Location = new System.Drawing.Point(120, 62);
-            this.marketGroupID.Name = "marketGroupID";
-            this.marketGroupID.ReadOnly = true;
-            this.marketGroupID.Size = new System.Drawing.Size(94, 20);
-            this.marketGroupID.TabIndex = 28;
+            this.lbMarketGroupID.Location = new System.Drawing.Point(133, 62);
+            this.lbMarketGroupID.Name = "lbMarketGroupID";
+            this.lbMarketGroupID.ReadOnly = true;
+            this.lbMarketGroupID.Size = new System.Drawing.Size(94, 20);
+            this.lbMarketGroupID.TabIndex = 28;
             // 
-            // published
+            // tbPublished
             // 
-            this.published.Location = new System.Drawing.Point(120, 88);
-            this.published.Name = "published";
-            this.published.Size = new System.Drawing.Size(94, 20);
-            this.published.TabIndex = 27;
+            this.tbPublished.Location = new System.Drawing.Point(133, 88);
+            this.tbPublished.Name = "tbPublished";
+            this.tbPublished.Size = new System.Drawing.Size(94, 20);
+            this.tbPublished.TabIndex = 27;
             // 
-            // basePrice
+            // tbBasePrice
             // 
-            this.basePrice.Location = new System.Drawing.Point(120, 445);
-            this.basePrice.Name = "basePrice";
-            this.basePrice.Size = new System.Drawing.Size(94, 20);
-            this.basePrice.TabIndex = 26;
+            this.tbBasePrice.Location = new System.Drawing.Point(133, 445);
+            this.tbBasePrice.Name = "tbBasePrice";
+            this.tbBasePrice.Size = new System.Drawing.Size(94, 20);
+            this.tbBasePrice.TabIndex = 26;
             // 
-            // raceID
+            // tbRaceID
             // 
-            this.raceID.Location = new System.Drawing.Point(120, 419);
-            this.raceID.Name = "raceID";
-            this.raceID.Size = new System.Drawing.Size(94, 20);
-            this.raceID.TabIndex = 25;
+            this.tbRaceID.Location = new System.Drawing.Point(133, 419);
+            this.tbRaceID.Name = "tbRaceID";
+            this.tbRaceID.Size = new System.Drawing.Size(94, 20);
+            this.tbRaceID.TabIndex = 25;
             // 
-            // capacity
+            // tbCapacity
             // 
-            this.capacity.Location = new System.Drawing.Point(120, 368);
-            this.capacity.Name = "capacity";
-            this.capacity.Size = new System.Drawing.Size(94, 20);
-            this.capacity.TabIndex = 24;
+            this.tbCapacity.Location = new System.Drawing.Point(133, 368);
+            this.tbCapacity.Name = "tbCapacity";
+            this.tbCapacity.Size = new System.Drawing.Size(94, 20);
+            this.tbCapacity.TabIndex = 24;
             // 
-            // portionSize
+            // tbPortionSize
             // 
-            this.portionSize.Location = new System.Drawing.Point(120, 393);
-            this.portionSize.Name = "portionSize";
-            this.portionSize.Size = new System.Drawing.Size(94, 20);
-            this.portionSize.TabIndex = 23;
+            this.tbPortionSize.Location = new System.Drawing.Point(133, 393);
+            this.tbPortionSize.Name = "tbPortionSize";
+            this.tbPortionSize.Size = new System.Drawing.Size(94, 20);
+            this.tbPortionSize.TabIndex = 23;
             // 
-            // volume
+            // tbVolume
             // 
-            this.volume.Location = new System.Drawing.Point(120, 342);
-            this.volume.Name = "volume";
-            this.volume.Size = new System.Drawing.Size(94, 20);
-            this.volume.TabIndex = 22;
+            this.tbVolume.Location = new System.Drawing.Point(133, 342);
+            this.tbVolume.Name = "tbVolume";
+            this.tbVolume.Size = new System.Drawing.Size(94, 20);
+            this.tbVolume.TabIndex = 22;
             // 
-            // radius
+            // tbRadius
             // 
-            this.radius.Location = new System.Drawing.Point(120, 290);
-            this.radius.Name = "radius";
-            this.radius.Size = new System.Drawing.Size(94, 20);
-            this.radius.TabIndex = 21;
+            this.tbRadius.Location = new System.Drawing.Point(133, 290);
+            this.tbRadius.Name = "tbRadius";
+            this.tbRadius.Size = new System.Drawing.Size(94, 20);
+            this.tbRadius.TabIndex = 21;
             // 
-            // graphicID
+            // tbGraphicID
             // 
-            this.graphicID.Location = new System.Drawing.Point(120, 264);
-            this.graphicID.Name = "graphicID";
-            this.graphicID.Size = new System.Drawing.Size(94, 20);
-            this.graphicID.TabIndex = 20;
+            this.tbGraphicID.Location = new System.Drawing.Point(133, 264);
+            this.tbGraphicID.Name = "tbGraphicID";
+            this.tbGraphicID.Size = new System.Drawing.Size(94, 20);
+            this.tbGraphicID.TabIndex = 20;
             // 
-            // mass
+            // tbMass
             // 
-            this.mass.Location = new System.Drawing.Point(120, 316);
-            this.mass.Name = "mass";
-            this.mass.Size = new System.Drawing.Size(94, 20);
-            this.mass.TabIndex = 19;
+            this.tbMass.Location = new System.Drawing.Point(133, 316);
+            this.tbMass.Name = "tbMass";
+            this.tbMass.Size = new System.Drawing.Size(94, 20);
+            this.tbMass.TabIndex = 19;
             // 
-            // description
+            // tbDescription
             // 
-            this.description.Location = new System.Drawing.Point(120, 138);
-            this.description.Multiline = true;
-            this.description.Name = "description";
-            this.description.Size = new System.Drawing.Size(284, 120);
-            this.description.TabIndex = 18;
+            this.tbDescription.Location = new System.Drawing.Point(133, 138);
+            this.tbDescription.Multiline = true;
+            this.tbDescription.Name = "tbDescription";
+            this.tbDescription.Size = new System.Drawing.Size(284, 120);
+            this.tbDescription.TabIndex = 18;
             // 
-            // groupID
+            // lbGroupID
             // 
-            this.groupID.Location = new System.Drawing.Point(120, 35);
-            this.groupID.Name = "groupID";
-            this.groupID.ReadOnly = true;
-            this.groupID.Size = new System.Drawing.Size(94, 20);
-            this.groupID.TabIndex = 17;
+            this.lbGroupID.Location = new System.Drawing.Point(133, 35);
+            this.lbGroupID.Name = "lbGroupID";
+            this.lbGroupID.ReadOnly = true;
+            this.lbGroupID.Size = new System.Drawing.Size(94, 20);
+            this.lbGroupID.TabIndex = 17;
             // 
-            // typeName
+            // tbTypeName
             // 
-            this.typeName.Location = new System.Drawing.Point(220, 9);
-            this.typeName.Name = "typeName";
-            this.typeName.Size = new System.Drawing.Size(184, 20);
-            this.typeName.TabIndex = 16;
+            this.tbTypeName.Location = new System.Drawing.Point(233, 9);
+            this.tbTypeName.Name = "tbTypeName";
+            this.tbTypeName.Size = new System.Drawing.Size(184, 20);
+            this.tbTypeName.TabIndex = 16;
             // 
-            // typeID1
+            // lbTypeID
             // 
-            this.typeID1.Location = new System.Drawing.Point(120, 9);
-            this.typeID1.Name = "typeID1";
-            this.typeID1.ReadOnly = true;
-            this.typeID1.Size = new System.Drawing.Size(94, 20);
-            this.typeID1.TabIndex = 15;
+            this.lbTypeID.Location = new System.Drawing.Point(133, 9);
+            this.lbTypeID.Name = "lbTypeID";
+            this.lbTypeID.ReadOnly = true;
+            this.lbTypeID.Size = new System.Drawing.Size(94, 20);
+            this.lbTypeID.TabIndex = 15;
             // 
             // label17
             // 
@@ -408,14 +413,14 @@ namespace Evemu_DB_Editor
             this.label12.TabIndex = 9;
             this.label12.Text = "Published:";
             // 
-            // label11
+            // label2
             // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(6, 38);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(53, 13);
-            this.label11.TabIndex = 8;
-            this.label11.Text = "Group ID:";
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(6, 38);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(53, 13);
+            this.label2.TabIndex = 8;
+            this.label2.Text = "Group ID:";
             // 
             // label9
             // 
@@ -447,7 +452,7 @@ namespace Evemu_DB_Editor
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(6, 115);
+            this.label6.Location = new System.Drawing.Point(7, 115);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(117, 13);
             this.label6.TabIndex = 3;
@@ -480,93 +485,98 @@ namespace Evemu_DB_Editor
             this.label3.TabIndex = 0;
             this.label3.Text = "Item:";
             // 
-            // tabPage2
+            // tabItemAttributes
             // 
-            this.tabPage2.Controls.Add(this.attributeAdd);
-            this.tabPage2.Controls.Add(this.attributeChange);
-            this.tabPage2.Controls.Add(this.attributeInt);
-            this.tabPage2.Controls.Add(this.attributeFloat);
-            this.tabPage2.Controls.Add(this.attributeID);
-            this.tabPage2.Controls.Add(this.attributeDescription);
-            this.tabPage2.Controls.Add(this.itemAttributes);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(414, 474);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Item Attributes";
-            this.tabPage2.UseVisualStyleBackColor = true;
-            this.tabPage2.Enter += new System.EventHandler(this.tabPage2_Enter);
+            this.tabItemAttributes.Controls.Add(this.btAttributeAdd);
+            this.tabItemAttributes.Controls.Add(this.btAttributeChange);
+            this.tabItemAttributes.Controls.Add(this.tbAttributeInt);
+            this.tabItemAttributes.Controls.Add(this.tbAttributeFloat);
+            this.tabItemAttributes.Controls.Add(this.lblAttributeID);
+            this.tabItemAttributes.Controls.Add(this.lAttributeName);
+            this.tabItemAttributes.Controls.Add(this.lvAttributes);
+            this.tabItemAttributes.Location = new System.Drawing.Point(4, 22);
+            this.tabItemAttributes.Name = "tabItemAttributes";
+            this.tabItemAttributes.Padding = new System.Windows.Forms.Padding(3);
+            this.tabItemAttributes.Size = new System.Drawing.Size(431, 484);
+            this.tabItemAttributes.TabIndex = 1;
+            this.tabItemAttributes.Text = "Item Attributes";
+            this.tabItemAttributes.UseVisualStyleBackColor = true;
+            this.tabItemAttributes.Enter += new System.EventHandler(this.tabItemAttributes_Enter);
             // 
-            // attributeAdd
+            // btAttributeAdd
             // 
-            this.attributeAdd.Location = new System.Drawing.Point(297, 447);
-            this.attributeAdd.Name = "attributeAdd";
-            this.attributeAdd.Size = new System.Drawing.Size(52, 23);
-            this.attributeAdd.TabIndex = 38;
-            this.attributeAdd.Text = "Add";
-            this.attributeAdd.UseVisualStyleBackColor = true;
-            this.attributeAdd.Click += new System.EventHandler(this.attributeAdd_Click);
+            this.btAttributeAdd.Location = new System.Drawing.Point(297, 447);
+            this.btAttributeAdd.Name = "btAttributeAdd";
+            this.btAttributeAdd.Size = new System.Drawing.Size(52, 23);
+            this.btAttributeAdd.TabIndex = 38;
+            this.btAttributeAdd.Text = "Add";
+            this.btAttributeAdd.UseVisualStyleBackColor = true;
+            this.btAttributeAdd.Click += new System.EventHandler(this.btAttributeAdd_Click);
             // 
-            // attributeChange
+            // btAttributeChange
             // 
-            this.attributeChange.Location = new System.Drawing.Point(355, 447);
-            this.attributeChange.Name = "attributeChange";
-            this.attributeChange.Size = new System.Drawing.Size(52, 23);
-            this.attributeChange.TabIndex = 37;
-            this.attributeChange.Text = "Change";
-            this.attributeChange.UseVisualStyleBackColor = true;
-            this.attributeChange.Click += new System.EventHandler(this.attributeChange_Click);
+            this.btAttributeChange.Location = new System.Drawing.Point(355, 447);
+            this.btAttributeChange.Name = "btAttributeChange";
+            this.btAttributeChange.Size = new System.Drawing.Size(52, 23);
+            this.btAttributeChange.TabIndex = 37;
+            this.btAttributeChange.Text = "Change";
+            this.btAttributeChange.UseVisualStyleBackColor = true;
+            this.btAttributeChange.Click += new System.EventHandler(this.btAttributeChange_Click);
             // 
-            // attributeInt
+            // tbAttributeInt
             // 
-            this.attributeInt.Location = new System.Drawing.Point(175, 448);
-            this.attributeInt.Name = "attributeInt";
-            this.attributeInt.Size = new System.Drawing.Size(54, 20);
-            this.attributeInt.TabIndex = 36;
+            this.tbAttributeInt.Location = new System.Drawing.Point(175, 448);
+            this.tbAttributeInt.Name = "tbAttributeInt";
+            this.tbAttributeInt.Size = new System.Drawing.Size(54, 20);
+            this.tbAttributeInt.TabIndex = 36;
             // 
-            // attributeFloat
+            // tbAttributeFloat
             // 
-            this.attributeFloat.Location = new System.Drawing.Point(235, 448);
-            this.attributeFloat.Name = "attributeFloat";
-            this.attributeFloat.Size = new System.Drawing.Size(54, 20);
-            this.attributeFloat.TabIndex = 35;
+            this.tbAttributeFloat.Location = new System.Drawing.Point(235, 448);
+            this.tbAttributeFloat.Name = "tbAttributeFloat";
+            this.tbAttributeFloat.Size = new System.Drawing.Size(54, 20);
+            this.tbAttributeFloat.TabIndex = 35;
             // 
-            // attributeID
+            // lblAttributeID
             // 
-            this.attributeID.Location = new System.Drawing.Point(6, 448);
-            this.attributeID.Name = "attributeID";
-            this.attributeID.ReadOnly = true;
-            this.attributeID.Size = new System.Drawing.Size(47, 20);
-            this.attributeID.TabIndex = 34;
+            this.lblAttributeID.Location = new System.Drawing.Point(6, 448);
+            this.lblAttributeID.Name = "lblAttributeID";
+            this.lblAttributeID.ReadOnly = true;
+            this.lblAttributeID.Size = new System.Drawing.Size(47, 20);
+            this.lblAttributeID.TabIndex = 34;
             // 
-            // attributeDescription
+            // lAttributeName
             // 
-            this.attributeDescription.FormattingEnabled = true;
-            this.attributeDescription.Location = new System.Drawing.Point(59, 447);
-            this.attributeDescription.Name = "attributeDescription";
-            this.attributeDescription.Size = new System.Drawing.Size(110, 21);
-            this.attributeDescription.TabIndex = 33;
-            this.attributeDescription.SelectedIndexChanged += new System.EventHandler(this.attributeDescription_SelectedIndexChanged);
+            this.lAttributeName.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.lAttributeName.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.lAttributeName.FormattingEnabled = true;
+            this.lAttributeName.Location = new System.Drawing.Point(59, 447);
+            this.lAttributeName.Name = "lAttributeName";
+            this.lAttributeName.Size = new System.Drawing.Size(110, 21);
+            this.lAttributeName.TabIndex = 33;
+            this.lAttributeName.SelectedIndexChanged += new System.EventHandler(this.lAttributeName_SelectedIndexChanged);
             // 
-            // itemAttributes
+            // lvAttributes
             // 
-            this.itemAttributes.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.lvAttributes.Anchor = ((System.Windows.Forms.AnchorStyles) ((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.lvAttributes.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1,
             this.columnHeader2,
             this.columnHeader3,
             this.columnHeader4});
-            this.itemAttributes.ContextMenuStrip = this.itemAttributeContext;
-            this.itemAttributes.FullRowSelect = true;
-            this.itemAttributes.HideSelection = false;
-            this.itemAttributes.Location = new System.Drawing.Point(6, 6);
-            this.itemAttributes.MultiSelect = false;
-            this.itemAttributes.Name = "itemAttributes";
-            this.itemAttributes.Size = new System.Drawing.Size(399, 435);
-            this.itemAttributes.TabIndex = 12;
-            this.itemAttributes.UseCompatibleStateImageBehavior = false;
-            this.itemAttributes.View = System.Windows.Forms.View.Details;
-            this.itemAttributes.SelectedIndexChanged += new System.EventHandler(this.itemAttributes_SelectedIndexChanged);
+            this.lvAttributes.ContextMenuStrip = this.mAttributes;
+            this.lvAttributes.FullRowSelect = true;
+            this.lvAttributes.HideSelection = false;
+            this.lvAttributes.Location = new System.Drawing.Point(6, 6);
+            this.lvAttributes.MultiSelect = false;
+            this.lvAttributes.Name = "lvAttributes";
+            this.lvAttributes.Size = new System.Drawing.Size(419, 435);
+            this.lvAttributes.TabIndex = 12;
+            this.lvAttributes.UseCompatibleStateImageBehavior = false;
+            this.lvAttributes.View = System.Windows.Forms.View.Details;
+            this.lvAttributes.SelectedIndexChanged += new System.EventHandler(this.lvAttributes_SelectedIndexChanged);
             // 
             // columnHeader1
             // 
@@ -587,98 +597,103 @@ namespace Evemu_DB_Editor
             this.columnHeader4.Text = "Float";
             this.columnHeader4.Width = 50;
             // 
-            // itemAttributeContext
+            // mAttributes
             // 
-            this.itemAttributeContext.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.deleteToolStripMenuItem});
-            this.itemAttributeContext.Name = "itemAttributeContext";
-            this.itemAttributeContext.Size = new System.Drawing.Size(108, 26);
+            this.mAttributes.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.miDeleteAttrib});
+            this.mAttributes.Name = "itemAttributeContext";
+            this.mAttributes.Size = new System.Drawing.Size(113, 26);
             // 
-            // deleteToolStripMenuItem
+            // miDeleteAttrib
             // 
-            this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
-            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
-            this.deleteToolStripMenuItem.Text = "Delete";
-            this.deleteToolStripMenuItem.Click += new System.EventHandler(this.deleteToolStripMenuItem_Click);
+            this.miDeleteAttrib.Name = "miDeleteAttrib";
+            this.miDeleteAttrib.Size = new System.Drawing.Size(112, 22);
+            this.miDeleteAttrib.Text = "Delete";
+            this.miDeleteAttrib.Click += new System.EventHandler(this.miDeleteAttribute_Click);
             // 
-            // tabPage3
+            // tabItemEffects
             // 
-            this.tabPage3.Controls.Add(this.button1);
-            this.tabPage3.Controls.Add(this.button2);
-            this.tabPage3.Controls.Add(this.isDefault);
-            this.tabPage3.Controls.Add(this.effectID);
-            this.tabPage3.Controls.Add(this.effectDescription);
-            this.tabPage3.Controls.Add(this.itemEffects);
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(414, 474);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Item Effects";
-            this.tabPage3.UseVisualStyleBackColor = true;
-            this.tabPage3.Enter += new System.EventHandler(this.tabPage3_Enter);
+            this.tabItemEffects.Controls.Add(this.btAddEffect);
+            this.tabItemEffects.Controls.Add(this.btChangeEffect);
+            this.tabItemEffects.Controls.Add(this.tbIsDefault);
+            this.tabItemEffects.Controls.Add(this.lblEffectID);
+            this.tabItemEffects.Controls.Add(this.lEffectDescription);
+            this.tabItemEffects.Controls.Add(this.lvEffects);
+            this.tabItemEffects.Location = new System.Drawing.Point(4, 22);
+            this.tabItemEffects.Name = "tabItemEffects";
+            this.tabItemEffects.Padding = new System.Windows.Forms.Padding(3);
+            this.tabItemEffects.Size = new System.Drawing.Size(431, 484);
+            this.tabItemEffects.TabIndex = 2;
+            this.tabItemEffects.Text = "Item Effects";
+            this.tabItemEffects.UseVisualStyleBackColor = true;
+            this.tabItemEffects.Enter += new System.EventHandler(this.tabItemEffects_Enter);
             // 
-            // button1
+            // btAddEffect
             // 
-            this.button1.Location = new System.Drawing.Point(298, 446);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(52, 23);
-            this.button1.TabIndex = 45;
-            this.button1.Text = "Add";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btAddEffect.Location = new System.Drawing.Point(298, 446);
+            this.btAddEffect.Name = "btAddEffect";
+            this.btAddEffect.Size = new System.Drawing.Size(52, 23);
+            this.btAddEffect.TabIndex = 45;
+            this.btAddEffect.Text = "Add";
+            this.btAddEffect.UseVisualStyleBackColor = true;
+            this.btAddEffect.Click += new System.EventHandler(this.btAddEffect_Click);
             // 
-            // button2
+            // btChangeEffect
             // 
-            this.button2.Location = new System.Drawing.Point(356, 446);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(52, 23);
-            this.button2.TabIndex = 44;
-            this.button2.Text = "Change";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btChangeEffect.Location = new System.Drawing.Point(356, 446);
+            this.btChangeEffect.Name = "btChangeEffect";
+            this.btChangeEffect.Size = new System.Drawing.Size(52, 23);
+            this.btChangeEffect.TabIndex = 44;
+            this.btChangeEffect.Text = "Change";
+            this.btChangeEffect.UseVisualStyleBackColor = true;
             // 
-            // isDefault
+            // tbIsDefault
             // 
-            this.isDefault.Location = new System.Drawing.Point(254, 446);
-            this.isDefault.Name = "isDefault";
-            this.isDefault.Size = new System.Drawing.Size(38, 20);
-            this.isDefault.TabIndex = 43;
-            this.isDefault.Text = "0";
+            this.tbIsDefault.Location = new System.Drawing.Point(254, 446);
+            this.tbIsDefault.Name = "tbIsDefault";
+            this.tbIsDefault.Size = new System.Drawing.Size(38, 20);
+            this.tbIsDefault.TabIndex = 43;
+            this.tbIsDefault.Text = "0";
             // 
-            // effectID
+            // lblEffectID
             // 
-            this.effectID.Location = new System.Drawing.Point(7, 447);
-            this.effectID.Name = "effectID";
-            this.effectID.ReadOnly = true;
-            this.effectID.Size = new System.Drawing.Size(47, 20);
-            this.effectID.TabIndex = 41;
+            this.lblEffectID.Location = new System.Drawing.Point(7, 447);
+            this.lblEffectID.Name = "lblEffectID";
+            this.lblEffectID.ReadOnly = true;
+            this.lblEffectID.Size = new System.Drawing.Size(47, 20);
+            this.lblEffectID.TabIndex = 41;
             // 
-            // effectDescription
+            // lEffectDescription
             // 
-            this.effectDescription.FormattingEnabled = true;
-            this.effectDescription.Location = new System.Drawing.Point(60, 446);
-            this.effectDescription.Name = "effectDescription";
-            this.effectDescription.Size = new System.Drawing.Size(188, 21);
-            this.effectDescription.TabIndex = 40;
-            this.effectDescription.SelectedIndexChanged += new System.EventHandler(this.effectDescription_SelectedIndexChanged);
+            this.lEffectDescription.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.lEffectDescription.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.lEffectDescription.FormattingEnabled = true;
+            this.lEffectDescription.Location = new System.Drawing.Point(60, 446);
+            this.lEffectDescription.Name = "lEffectDescription";
+            this.lEffectDescription.Size = new System.Drawing.Size(188, 21);
+            this.lEffectDescription.TabIndex = 40;
+            this.lEffectDescription.SelectedIndexChanged += new System.EventHandler(this.lEffectName_SelectedIndexChanged);
             // 
-            // itemEffects
+            // lvEffects
             // 
-            this.itemEffects.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.lvEffects.Anchor = ((System.Windows.Forms.AnchorStyles) ((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.lvEffects.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader5,
             this.columnHeader6,
             this.columnHeader7});
-            this.itemEffects.ContextMenuStrip = this.itemEffectContext;
-            this.itemEffects.FullRowSelect = true;
-            this.itemEffects.HideSelection = false;
-            this.itemEffects.Location = new System.Drawing.Point(7, 5);
-            this.itemEffects.MultiSelect = false;
-            this.itemEffects.Name = "itemEffects";
-            this.itemEffects.Size = new System.Drawing.Size(399, 435);
-            this.itemEffects.TabIndex = 39;
-            this.itemEffects.UseCompatibleStateImageBehavior = false;
-            this.itemEffects.View = System.Windows.Forms.View.Details;
-            this.itemEffects.SelectedIndexChanged += new System.EventHandler(this.itemEffects_SelectedIndexChanged);
+            this.lvEffects.ContextMenuStrip = this.mEffects;
+            this.lvEffects.FullRowSelect = true;
+            this.lvEffects.HideSelection = false;
+            this.lvEffects.Location = new System.Drawing.Point(7, 5);
+            this.lvEffects.MultiSelect = false;
+            this.lvEffects.Name = "lvEffects";
+            this.lvEffects.Size = new System.Drawing.Size(419, 435);
+            this.lvEffects.TabIndex = 39;
+            this.lvEffects.UseCompatibleStateImageBehavior = false;
+            this.lvEffects.View = System.Windows.Forms.View.Details;
+            this.lvEffects.SelectedIndexChanged += new System.EventHandler(this.lvEffects_SelectedIndexChanged);
             // 
             // columnHeader5
             // 
@@ -694,40 +709,40 @@ namespace Evemu_DB_Editor
             // 
             this.columnHeader7.Text = "Is default";
             // 
-            // itemEffectContext
+            // mEffects
             // 
-            this.itemEffectContext.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.deleteToolStripMenuItem1});
-            this.itemEffectContext.Name = "itemEffectContext";
-            this.itemEffectContext.Size = new System.Drawing.Size(108, 26);
+            this.mEffects.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.miDeleteEffect});
+            this.mEffects.Name = "itemEffectContext";
+            this.mEffects.Size = new System.Drawing.Size(113, 26);
             // 
-            // deleteToolStripMenuItem1
+            // miDeleteEffect
             // 
-            this.deleteToolStripMenuItem1.Name = "deleteToolStripMenuItem1";
-            this.deleteToolStripMenuItem1.Size = new System.Drawing.Size(107, 22);
-            this.deleteToolStripMenuItem1.Text = "Delete";
-            this.deleteToolStripMenuItem1.Click += new System.EventHandler(this.deleteToolStripMenuItem1_Click);
+            this.miDeleteEffect.Name = "miDeleteEffect";
+            this.miDeleteEffect.Size = new System.Drawing.Size(112, 22);
+            this.miDeleteEffect.Text = "Delete";
+            this.miDeleteEffect.Click += new System.EventHandler(this.miDeleteEffect_Click);
             // 
-            // itemAddEdit
+            // frItemEditor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(443, 516);
             this.Controls.Add(this.tabControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Name = "itemAddEdit";
+            this.Name = "frItemEditor";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Item Name: ";
-            this.Load += new System.EventHandler(this.itemAddEdit_Load);
+            this.Load += new System.EventHandler(this.frItemEditor_Load);
             this.tabControl1.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
-            this.tabPage1.PerformLayout();
-            this.tabPage2.ResumeLayout(false);
-            this.tabPage2.PerformLayout();
-            this.itemAttributeContext.ResumeLayout(false);
-            this.tabPage3.ResumeLayout(false);
-            this.tabPage3.PerformLayout();
-            this.itemEffectContext.ResumeLayout(false);
+            this.tabItemProperties.ResumeLayout(false);
+            this.tabItemProperties.PerformLayout();
+            this.tabItemAttributes.ResumeLayout(false);
+            this.tabItemAttributes.PerformLayout();
+            this.mAttributes.ResumeLayout(false);
+            this.tabItemEffects.ResumeLayout(false);
+            this.tabItemEffects.PerformLayout();
+            this.mEffects.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -735,15 +750,15 @@ namespace Evemu_DB_Editor
         #endregion
 
         private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.TabPage tabItemProperties;
+        private System.Windows.Forms.TabPage tabItemAttributes;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
@@ -751,51 +766,51 @@ namespace Evemu_DB_Editor
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox chanceOfDuplicating;
-        private System.Windows.Forms.TextBox marketGroupID;
-        private System.Windows.Forms.TextBox published;
-        private System.Windows.Forms.TextBox basePrice;
-        private System.Windows.Forms.TextBox raceID;
-        private System.Windows.Forms.TextBox capacity;
-        private System.Windows.Forms.TextBox portionSize;
-        private System.Windows.Forms.TextBox volume;
-        private System.Windows.Forms.TextBox radius;
-        private System.Windows.Forms.TextBox graphicID;
-        private System.Windows.Forms.TextBox mass;
-        private System.Windows.Forms.TextBox description;
-        private System.Windows.Forms.TextBox groupID;
-        private System.Windows.Forms.TextBox typeName;
-        private System.Windows.Forms.TextBox typeID1;
-        private System.Windows.Forms.Button delete;
-        private System.Windows.Forms.Button save;
-        private System.Windows.Forms.Button itemRefresh;
-        private System.Windows.Forms.Button button5;
-        protected System.Windows.Forms.ListView itemAttributes;
+        private System.Windows.Forms.TextBox tbChanceOfDuplicating;
+        private System.Windows.Forms.TextBox lbMarketGroupID;
+        private System.Windows.Forms.TextBox tbPublished;
+        private System.Windows.Forms.TextBox tbBasePrice;
+        private System.Windows.Forms.TextBox tbRaceID;
+        private System.Windows.Forms.TextBox tbCapacity;
+        private System.Windows.Forms.TextBox tbPortionSize;
+        private System.Windows.Forms.TextBox tbVolume;
+        private System.Windows.Forms.TextBox tbRadius;
+        private System.Windows.Forms.TextBox tbGraphicID;
+        private System.Windows.Forms.TextBox tbMass;
+        private System.Windows.Forms.TextBox tbDescription;
+        private System.Windows.Forms.TextBox lbGroupID;
+        private System.Windows.Forms.TextBox tbTypeName;
+        private System.Windows.Forms.TextBox lbTypeID;
+        private System.Windows.Forms.Button btDelete;
+        private System.Windows.Forms.Button btSave;
+        private System.Windows.Forms.Button btRefresh;
+        private System.Windows.Forms.Button btHelp;
+        protected System.Windows.Forms.ListView lvAttributes;
         private System.Windows.Forms.ColumnHeader columnHeader1;
         private System.Windows.Forms.ColumnHeader columnHeader2;
         private System.Windows.Forms.ColumnHeader columnHeader3;
         private System.Windows.Forms.ColumnHeader columnHeader4;
-        private System.Windows.Forms.Button attributeAdd;
-        private System.Windows.Forms.Button attributeChange;
-        private System.Windows.Forms.TextBox attributeInt;
-        private System.Windows.Forms.TextBox attributeFloat;
-        private System.Windows.Forms.TextBox attributeID;
-        private System.Windows.Forms.ComboBox attributeDescription;
-        private System.Windows.Forms.ComboBox marketGroupSelector;
-        private System.Windows.Forms.ComboBox groupSelector;
-        private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox isDefault;
-        private System.Windows.Forms.TextBox effectID;
-        private System.Windows.Forms.ComboBox effectDescription;
-        protected System.Windows.Forms.ListView itemEffects;
+        private System.Windows.Forms.Button btAttributeAdd;
+        private System.Windows.Forms.Button btAttributeChange;
+        private System.Windows.Forms.TextBox tbAttributeInt;
+        private System.Windows.Forms.TextBox tbAttributeFloat;
+        private System.Windows.Forms.TextBox lblAttributeID;
+        private System.Windows.Forms.ComboBox lAttributeName;
+        private System.Windows.Forms.ComboBox lMarketGroup;
+        private System.Windows.Forms.ComboBox lGroup;
+        private System.Windows.Forms.TabPage tabItemEffects;
+        private System.Windows.Forms.Button btAddEffect;
+        private System.Windows.Forms.Button btChangeEffect;
+        private System.Windows.Forms.TextBox tbIsDefault;
+        private System.Windows.Forms.TextBox lblEffectID;
+        private System.Windows.Forms.ComboBox lEffectDescription;
+        protected System.Windows.Forms.ListView lvEffects;
         private System.Windows.Forms.ColumnHeader columnHeader5;
         private System.Windows.Forms.ColumnHeader columnHeader6;
         private System.Windows.Forms.ColumnHeader columnHeader7;
-        private System.Windows.Forms.ContextMenuStrip itemAttributeContext;
-        private System.Windows.Forms.ToolStripMenuItem deleteToolStripMenuItem;
-        private System.Windows.Forms.ContextMenuStrip itemEffectContext;
-        private System.Windows.Forms.ToolStripMenuItem deleteToolStripMenuItem1;
+        private System.Windows.Forms.ContextMenuStrip mAttributes;
+        private System.Windows.Forms.ToolStripMenuItem miDeleteAttrib;
+        private System.Windows.Forms.ContextMenuStrip mEffects;
+        private System.Windows.Forms.ToolStripMenuItem miDeleteEffect;
     }
 }
