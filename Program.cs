@@ -7,7 +7,7 @@ namespace Evemu_DB_Editor
 {
     static class Program
     {
-        public static main m;
+        public static frMain m;
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -16,7 +16,7 @@ namespace Evemu_DB_Editor
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            m = new main();
+            m = new frMain();
             Application.Run(m);
         }
     }
