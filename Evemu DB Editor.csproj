@@ -80,64 +80,64 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="src\GUI\frAccountEditor.cs">
+    <Compile Include="src\gui\frAccountEditor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="src\GUI\frAccountEditor.Designer.cs">
+    <Compile Include="src\gui\frAccountEditor.Designer.cs">
       <DependentUpon>frAccountEditor.cs</DependentUpon>
     </Compile>
-    <Compile Include="src\GUI\frStartingSkill.cs">
+    <Compile Include="src\gui\frStartingSkill.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="src\GUI\frStartingSkill.Designer.cs">
+    <Compile Include="src\gui\frStartingSkill.Designer.cs">
       <DependentUpon>frStartingSkill.cs</DependentUpon>
     </Compile>
     <Compile Include="src\core\DBConnect.cs" />
-    <Compile Include="src\GUI\frSkillEditor.cs">
+    <Compile Include="src\gui\frSkillEditor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="src\GUI\frSkillEditor.Designer.cs">
+    <Compile Include="src\gui\frSkillEditor.Designer.cs">
       <DependentUpon>frSkillEditor.cs</DependentUpon>
     </Compile>
-    <Compile Include="src\GUI\frOre.cs">
+    <Compile Include="src\gui\frOre.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="src\GUI\frOre.Designer.cs">
+    <Compile Include="src\gui\frOre.Designer.cs">
       <DependentUpon>frOre.cs</DependentUpon>
     </Compile>
-    <Compile Include="src\GUI\frInfo.cs">
+    <Compile Include="src\gui\frInfo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="src\GUI\frInfo.Designer.cs">
+    <Compile Include="src\gui\frInfo.Designer.cs">
       <DependentUpon>frInfo.cs</DependentUpon>
     </Compile>
-    <Compile Include="src\GUI\frItemEditor.cs">
+    <Compile Include="src\gui\frItemEditor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="src\GUI\frItemEditor.Designer.cs">
+    <Compile Include="src\gui\frItemEditor.Designer.cs">
       <DependentUpon>frItemEditor.cs</DependentUpon>
     </Compile>
-    <Compile Include="src\GUI\frMain.cs">
+    <Compile Include="src\gui\frMain.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="src\GUI\frMain.Designer.cs">
+    <Compile Include="src\gui\frMain.Designer.cs">
       <DependentUpon>frMain.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="src\core\StuffFile.cs" />
     <Compile Include="src\core\XMLReader.cs" />
-    <EmbeddedResource Include="src\GUI\frAccountEditor.resx">
+    <EmbeddedResource Include="src\gui\frAccountEditor.resx">
       <DependentUpon>frAccountEditor.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="src\GUI\frInfo.resx">
+    <EmbeddedResource Include="src\gui\frInfo.resx">
       <DependentUpon>frInfo.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="src\GUI\frItemEditor.resx">
+    <EmbeddedResource Include="src\gui\frItemEditor.resx">
       <DependentUpon>frItemEditor.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="src\GUI\frMain.resx">
+    <EmbeddedResource Include="src\gui\frMain.resx">
       <DependentUpon>frMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -160,11 +160,17 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <Compile Include="src\core\LogSystem.cs" />
-    <Compile Include="src\GUI\tabAcct.cs">
+    <Compile Include="src\gui\tabAcct.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="src\GUI\tabAcct.Designer.cs">
+    <Compile Include="src\gui\tabAcct.Designer.cs">
       <DependentUpon>tabAcct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\gui\tabItems.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="src\gui\tabItems.Designer.cs">
+      <DependentUpon>tabItems.cs</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -204,17 +210,21 @@
     <None Include="Properties\app.manifest" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="src\GUI\frStartingSkill.resx">
+    <EmbeddedResource Include="src\gui\frStartingSkill.resx">
       <DependentUpon>frStartingSkill.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="src\GUI\frSkillEditor.resx">
+    <EmbeddedResource Include="src\gui\frSkillEditor.resx">
       <DependentUpon>frSkillEditor.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="src\GUI\frOre.resx">
+    <EmbeddedResource Include="src\gui\frOre.resx">
       <DependentUpon>frOre.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="src\GUI\tabAcct.resx">
+    <EmbeddedResource Include="src\gui\tabAcct.resx">
       <DependentUpon>tabAcct.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\gui\tabItems.resx">
+      <DependentUpon>tabItems.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>

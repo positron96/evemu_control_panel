@@ -117,59 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>599, 12</value>
+  <metadata name="mItems.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
   </metadata>
-  <metadata name="RaceSkillContext.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>302, 16</value>
-  </metadata>
-  <metadata name="oreMenuStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>23, 15</value>
-  </metadata>
-  <metadata name="marketGroupsContext.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>1133, 17</value>
-  </metadata>
-  <metadata name="contextMenuStrip2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>978, 17</value>
-  </metadata>
-  <metadata name="contextMenuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>155, 16</value>
-  </metadata>
-  <metadata name="folderBrowserDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 54</value>
-  </metadata>
-  <metadata name="openFileDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>175, 54</value>
-  </metadata>
-  <metadata name="openFileDialog2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>305, 54</value>
-  </metadata>
-  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>121</value>
-  </metadata>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAQAQAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAdAAAAsgAAANUBAQDoAwIA9QMDAPwDAwD8AwMA/AMDAPwEAwD8AgIA6wIBAOgBAQDoAQEA2AAA
-        ALoAAAAdAAAAvgEBAf8EBAH/CQgB/wkIAf8JCAH/CgoC/w0LA/8MCgP/CgkC/wgHAf8ICAH/BQUB/wMC
-        Af8CAgH/AQEBygsLCtkKCgb/DgwC/w0MAv8ODgL/FRQF/xoZB/8cGQj/GBYG/xUUBv8UEgf/FhUI/xoX
-        CP8SEQj/CwoH/wMDAuwUFBPlGBgS/xAPBP+UlI//xMTA/8fGwf/KycP/y8rE/8vLxf/LysX/ysnF/8nI
-        xP/JyMT/Tkk9/xUTC/8GBQT1IB0b6zgvJv8wKSD/ysrG////////////////////////////////////
-        /////////////2BcT/8eGBD/CgkH+zEoI+xXQTb/Tzwx/9TPzP//////6enn/6mppf+rq6n/qaik/6Kg
-        l/+ZmI3/kpGH/46Nhf9APS7/HhoP/woJB/w1KibyTz4y/0w4LP/Tzsv//////9XS0P9ZVlT/WVlZ/1RU
-        S/9DQSr/LSsT/yAfC/8XFgj/Ix8P/yEcEf8IBwX8Mywo8lBAM/9MOCn/087K///////09PP/1dPR/9XU
-        1P/U09H/zs3H/8nIwv/GxsH/xsbC/1RQQf8cGA//BwYE/DArJvBKPDD/RzYn/9HNyf//////////////
-        //////////////////////////////////9fXE//ExIK/wQEAvwrKCPrQzov/0I1I//PzMj//////97a
-        1/9+bmb/gG9p/4Fxbf9xamH/VFRH/1xZTv9gXFD/LCoe/woJBv8BAQD8KCYi6To1LP86LyD/z8vH////
-        ///o5uT/ppuV/6icl/+nnZj/m5eQ/5GQiP+Ukor/j46G/ysqJf8DAwH/AgEB/CIhH+M1MCn/MSkd/83K
-        x/////////////////////////////////////////////////9DQkD/AwIB/wEBAfshHx7bMC0n/ysl
-        HP98dnD/mZOO/5yWkP+dlY//mJSM/5SSiv+SkIj/i4qE/4ODgP+BgX//IyMh/wICAf8BAQD2ISAf0TQx
-        L/8vJyH/LiQc/y4lHv8oIxz/JiIZ/yQiGP8bGhH/ERMO/wcIBP8GBQP/BgYE/wUFBP8BAQD/AAAA8Ccn
-        J7VBQUD/QT45/z87Nf8+OzX/PDo0/zk5M/8xMS3/KSon/ycrKf8jIiD/IyMh/yMjIv8fHx7/CAgI/wAA
-        AOEiISEdNjY10zw6Oug9OznoQUA+8kZGRPxAQD78Ozs6/D0/Pvw7Ozv8Ojo5/Dk5Ofw4ODj8LCws7hsb
-        G+YEBARPAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAA==
-</value>
-  </data>
 </root>

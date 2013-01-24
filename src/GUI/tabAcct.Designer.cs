@@ -83,7 +83,7 @@
             // 
             this.label40.AutoSize = true;
             this.label40.Font = new System.Drawing.Font("Verdana", 12.25F, ((System.Drawing.FontStyle) ((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
-            this.label40.Location = new System.Drawing.Point(578, 47);
+            this.label40.Location = new System.Drawing.Point(573, 39);
             this.label40.Name = "label40";
             this.label40.Size = new System.Drawing.Size(144, 20);
             this.label40.TabIndex = 37;
@@ -111,7 +111,7 @@
             // 
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Verdana", 12.25F, ((System.Drawing.FontStyle) ((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
-            this.label19.Location = new System.Drawing.Point(306, 80);
+            this.label19.Location = new System.Drawing.Point(305, 127);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(134, 20);
             this.label19.TabIndex = 36;
@@ -127,7 +127,7 @@
             // 
             // btAddAccount
             // 
-            this.btAddAccount.Location = new System.Drawing.Point(333, 186);
+            this.btAddAccount.Location = new System.Drawing.Point(330, 236);
             this.btAddAccount.Name = "btAddAccount";
             this.btAddAccount.Size = new System.Drawing.Size(75, 23);
             this.btAddAccount.TabIndex = 28;
@@ -148,7 +148,7 @@
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(270, 162);
+            this.label15.Location = new System.Drawing.Point(267, 212);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(61, 13);
             this.label15.TabIndex = 27;
@@ -291,7 +291,7 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(270, 136);
+            this.label14.Location = new System.Drawing.Point(267, 186);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(56, 13);
             this.label14.TabIndex = 25;
@@ -317,7 +317,7 @@
             "GAME MASTER HIGH",
             "GAME MASTER LOW",
             "PLAYER"});
-            this.newAcctLevel.Location = new System.Drawing.Point(334, 159);
+            this.newAcctLevel.Location = new System.Drawing.Point(331, 209);
             this.newAcctLevel.Name = "newAcctLevel";
             this.newAcctLevel.Size = new System.Drawing.Size(130, 21);
             this.newAcctLevel.TabIndex = 24;
@@ -332,7 +332,7 @@
             // 
             // newPassword
             // 
-            this.newPassword.Location = new System.Drawing.Point(334, 133);
+            this.newPassword.Location = new System.Drawing.Point(331, 183);
             this.newPassword.Name = "newPassword";
             this.newPassword.PasswordChar = '*';
             this.newPassword.Size = new System.Drawing.Size(130, 20);
@@ -342,7 +342,7 @@
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Verdana", 12.25F, ((System.Drawing.FontStyle) ((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
-            this.label17.Location = new System.Drawing.Point(38, 47);
+            this.label17.Location = new System.Drawing.Point(32, 39);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(156, 20);
             this.label17.TabIndex = 34;
@@ -350,7 +350,7 @@
             // 
             // newUsername
             // 
-            this.newUsername.Location = new System.Drawing.Point(334, 107);
+            this.newUsername.Location = new System.Drawing.Point(331, 157);
             this.newUsername.Name = "newUsername";
             this.newUsername.Size = new System.Drawing.Size(130, 20);
             this.newUsername.TabIndex = 21;
@@ -358,7 +358,7 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(270, 110);
+            this.label13.Location = new System.Drawing.Point(267, 160);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(58, 13);
             this.label13.TabIndex = 19;
@@ -368,7 +368,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Verdana", 17.25F, ((System.Drawing.FontStyle) ((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.label10.Location = new System.Drawing.Point(3, 9);
+            this.label10.Location = new System.Drawing.Point(3, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(341, 28);
             this.label10.TabIndex = 31;
@@ -379,25 +379,25 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.btSearchAccount);
-            this.Controls.Add(this.label40);
             this.Controls.Add(this.label39);
             this.Controls.Add(this.label36);
-            this.Controls.Add(this.label19);
+            this.Controls.Add(this.label40);
             this.Controls.Add(this.tbCharacterID);
-            this.Controls.Add(this.btAddAccount);
             this.Controls.Add(this.lCharacterName);
-            this.Controls.Add(this.label15);
             this.Controls.Add(this.lvCharacterSkills);
+            this.Controls.Add(this.btAddAccount);
+            this.Controls.Add(this.label19);
             this.Controls.Add(this.lvAccounts);
-            this.Controls.Add(this.label14);
+            this.Controls.Add(this.label15);
             this.Controls.Add(this.label21);
-            this.Controls.Add(this.newAcctLevel);
             this.Controls.Add(this.accountTxtBox);
-            this.Controls.Add(this.newPassword);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.newAcctLevel);
+            this.Controls.Add(this.label10);
             this.Controls.Add(this.label17);
+            this.Controls.Add(this.newPassword);
             this.Controls.Add(this.newUsername);
             this.Controls.Add(this.label13);
-            this.Controls.Add(this.label10);
             this.Name = "tabAcct";
             this.Size = new System.Drawing.Size(828, 386);
             this.mCharacterSkill.ResumeLayout(false);

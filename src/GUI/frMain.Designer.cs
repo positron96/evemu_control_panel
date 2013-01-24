@@ -78,23 +78,7 @@
             this.tabAccount = new System.Windows.Forms.TabPage();
             this.tabAcct1 = new Evemu_DB_Editor.src.GUI.tabAcct();
             this.tabItemEditor = new System.Windows.Forms.TabPage();
-            this.label35 = new System.Windows.Forms.Label();
-            this.searchItemTxtBox = new System.Windows.Forms.TextBox();
-            this.searchItem = new System.Windows.Forms.Button();
-            this.ItemList = new System.Windows.Forms.ListView();
-            this.columnHeader1 = new System.Windows.Forms.ColumnHeader();
-            this.columnHeader2 = new System.Windows.Forms.ColumnHeader();
-            this.columnHeader3 = new System.Windows.Forms.ColumnHeader();
-            this.columnHeader4 = new System.Windows.Forms.ColumnHeader();
-            this.columnHeader5 = new System.Windows.Forms.ColumnHeader();
-            this.contextItemEdit = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.copyItemRClkBtn = new System.Windows.Forms.ToolStripMenuItem();
-            this.deleteItemRClkBtn = new System.Windows.Forms.ToolStripMenuItem();
-            this.editItemRClkBtn = new System.Windows.Forms.ToolStripMenuItem();
-            this.label11 = new System.Windows.Forms.Label();
-            this.CategoryDropdown = new System.Windows.Forms.ComboBox();
-            this.editItemBtn = new System.Windows.Forms.Button();
-            this.label20 = new System.Windows.Forms.Label();
+            this.tabItems1 = new Evemu_DB_Editor.src.gui.tabItems();
             this.tabInsure = new System.Windows.Forms.TabPage();
             this.label12 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
@@ -307,7 +291,6 @@
             this.groupBox1.SuspendLayout();
             this.tabAccount.SuspendLayout();
             this.tabItemEditor.SuspendLayout();
-            this.contextItemEdit.SuspendLayout();
             this.tabInsure.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -658,13 +641,13 @@
             // 
             // connectionStatusLbl
             // 
-            this.connectionStatusLbl.AutoSize = true;
             this.connectionStatusLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
             this.connectionStatusLbl.Location = new System.Drawing.Point(9, 32);
             this.connectionStatusLbl.Name = "connectionStatusLbl";
             this.connectionStatusLbl.Size = new System.Drawing.Size(112, 20);
             this.connectionStatusLbl.TabIndex = 0;
             this.connectionStatusLbl.Text = "Disconnected";
+            this.connectionStatusLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // groupBox1
             // 
@@ -784,6 +767,9 @@
             // 
             // tabAcct1
             // 
+            this.tabAcct1.Anchor = ((System.Windows.Forms.AnchorStyles) ((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.tabAcct1.Location = new System.Drawing.Point(3, 3);
             this.tabAcct1.Name = "tabAcct1";
             this.tabAcct1.Size = new System.Drawing.Size(828, 386);
@@ -791,14 +777,7 @@
             // 
             // tabItemEditor
             // 
-            this.tabItemEditor.Controls.Add(this.label35);
-            this.tabItemEditor.Controls.Add(this.searchItemTxtBox);
-            this.tabItemEditor.Controls.Add(this.searchItem);
-            this.tabItemEditor.Controls.Add(this.ItemList);
-            this.tabItemEditor.Controls.Add(this.label11);
-            this.tabItemEditor.Controls.Add(this.CategoryDropdown);
-            this.tabItemEditor.Controls.Add(this.editItemBtn);
-            this.tabItemEditor.Controls.Add(this.label20);
+            this.tabItemEditor.Controls.Add(this.tabItems1);
             this.tabItemEditor.Location = new System.Drawing.Point(4, 40);
             this.tabItemEditor.Name = "tabItemEditor";
             this.tabItemEditor.Padding = new System.Windows.Forms.Padding(3);
@@ -806,150 +785,15 @@
             this.tabItemEditor.TabIndex = 7;
             this.tabItemEditor.Text = "Item/Ship Editor";
             this.tabItemEditor.UseVisualStyleBackColor = true;
-            this.tabItemEditor.Enter += new System.EventHandler(this.tabItemEditor_Enter);
             // 
-            // label35
+            // tabItems1
             // 
-            this.label35.AutoSize = true;
-            this.label35.Location = new System.Drawing.Point(198, 45);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(44, 13);
-            this.label35.TabIndex = 18;
-            this.label35.Text = "Search:";
-            this.label35.Visible = false;
-            // 
-            // searchItemTxtBox
-            // 
-            this.searchItemTxtBox.Location = new System.Drawing.Point(248, 41);
-            this.searchItemTxtBox.Name = "searchItemTxtBox";
-            this.searchItemTxtBox.Size = new System.Drawing.Size(101, 20);
-            this.searchItemTxtBox.TabIndex = 17;
-            this.searchItemTxtBox.Visible = false;
-            this.searchItemTxtBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.searchItemTxtBox_KeyDown);
-            // 
-            // searchItem
-            // 
-            this.searchItem.Location = new System.Drawing.Point(355, 41);
-            this.searchItem.Name = "searchItem";
-            this.searchItem.Size = new System.Drawing.Size(75, 23);
-            this.searchItem.TabIndex = 16;
-            this.searchItem.Text = "Search";
-            this.searchItem.UseVisualStyleBackColor = true;
-            this.searchItem.Visible = false;
-            this.searchItem.Click += new System.EventHandler(this.searchItem_Click);
-            // 
-            // ItemList
-            // 
-            this.ItemList.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader1,
-            this.columnHeader2,
-            this.columnHeader3,
-            this.columnHeader4,
-            this.columnHeader5});
-            this.ItemList.ContextMenuStrip = this.contextItemEdit;
-            this.ItemList.FullRowSelect = true;
-            this.ItemList.HideSelection = false;
-            this.ItemList.Location = new System.Drawing.Point(6, 66);
-            this.ItemList.MultiSelect = false;
-            this.ItemList.Name = "ItemList";
-            this.ItemList.Size = new System.Drawing.Size(784, 290);
-            this.ItemList.TabIndex = 15;
-            this.ItemList.UseCompatibleStateImageBehavior = false;
-            this.ItemList.View = System.Windows.Forms.View.Details;
-            this.ItemList.DoubleClick += new System.EventHandler(this.ItemList_DblClick);
-            // 
-            // columnHeader1
-            // 
-            this.columnHeader1.Text = "typeID";
-            this.columnHeader1.Width = 150;
-            // 
-            // columnHeader2
-            // 
-            this.columnHeader2.Text = "typeName";
-            this.columnHeader2.Width = 150;
-            // 
-            // columnHeader3
-            // 
-            this.columnHeader3.Text = "Category";
-            this.columnHeader3.Width = 150;
-            // 
-            // columnHeader4
-            // 
-            this.columnHeader4.Text = "Race";
-            this.columnHeader4.Width = 150;
-            // 
-            // columnHeader5
-            // 
-            this.columnHeader5.Text = "Description";
-            this.columnHeader5.Width = 150;
-            // 
-            // contextItemEdit
-            // 
-            this.contextItemEdit.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.copyItemRClkBtn,
-            this.deleteItemRClkBtn,
-            this.editItemRClkBtn});
-            this.contextItemEdit.Name = "contextItemEdit";
-            this.contextItemEdit.Size = new System.Drawing.Size(142, 70);
-            // 
-            // copyItemRClkBtn
-            // 
-            this.copyItemRClkBtn.Name = "copyItemRClkBtn";
-            this.copyItemRClkBtn.Size = new System.Drawing.Size(141, 22);
-            this.copyItemRClkBtn.Text = "Copy item";
-            this.copyItemRClkBtn.Click += new System.EventHandler(this.copyItemRClkBtn_Click);
-            // 
-            // deleteItemRClkBtn
-            // 
-            this.deleteItemRClkBtn.Name = "deleteItemRClkBtn";
-            this.deleteItemRClkBtn.Size = new System.Drawing.Size(141, 22);
-            this.deleteItemRClkBtn.Text = "Delete item";
-            this.deleteItemRClkBtn.Click += new System.EventHandler(this.deleteItemRClkBtn_Click);
-            // 
-            // editItemRClkBtn
-            // 
-            this.editItemRClkBtn.Name = "editItemRClkBtn";
-            this.editItemRClkBtn.Size = new System.Drawing.Size(141, 22);
-            this.editItemRClkBtn.Text = "Edit item";
-            this.editItemRClkBtn.Click += new System.EventHandler(this.editItemRClkBtn_Click);
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(10, 43);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(52, 13);
-            this.label11.TabIndex = 14;
-            this.label11.Text = "Category:";
-            // 
-            // CategoryDropdown
-            // 
-            this.CategoryDropdown.FormattingEnabled = true;
-            this.CategoryDropdown.Location = new System.Drawing.Point(71, 40);
-            this.CategoryDropdown.Name = "CategoryDropdown";
-            this.CategoryDropdown.Size = new System.Drawing.Size(121, 21);
-            this.CategoryDropdown.TabIndex = 13;
-            this.CategoryDropdown.SelectedIndexChanged += new System.EventHandler(this.CategoryDropdown_SelectedIndexChanged);
-            // 
-            // editItemBtn
-            // 
-            this.editItemBtn.Location = new System.Drawing.Point(6, 362);
-            this.editItemBtn.Name = "editItemBtn";
-            this.editItemBtn.Size = new System.Drawing.Size(121, 23);
-            this.editItemBtn.TabIndex = 12;
-            this.editItemBtn.Text = "Edit Item";
-            this.editItemBtn.UseVisualStyleBackColor = true;
-            this.editItemBtn.Click += new System.EventHandler(this.editItemBtn_Click);
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Verdana", 17.25F, ((System.Drawing.FontStyle) ((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.label20.Location = new System.Drawing.Point(6, 3);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(231, 28);
-            this.label20.TabIndex = 9;
-            this.label20.Text = "Item/Ship Editor";
+            this.tabItems1.Anchor = ((System.Windows.Forms.AnchorStyles) (((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.tabItems1.Location = new System.Drawing.Point(0, 0);
+            this.tabItems1.Name = "tabItems1";
+            this.tabItems1.Size = new System.Drawing.Size(792, 395);
+            this.tabItems1.TabIndex = 0;
             // 
             // tabInsure
             // 
@@ -2852,13 +2696,10 @@
             this.tabSQL.ResumeLayout(false);
             this.tabSQL.PerformLayout();
             this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.tabAccount.ResumeLayout(false);
             this.tabItemEditor.ResumeLayout(false);
-            this.tabItemEditor.PerformLayout();
-            this.contextItemEdit.ResumeLayout(false);
             this.tabInsure.ResumeLayout(false);
             this.tabInsure.PerformLayout();
             this.groupBox4.ResumeLayout(false);
@@ -2952,8 +2793,6 @@
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.TabPage tabItemEditor;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Button editItemBtn;
         private System.Windows.Forms.Button goToForumsBtn;
         internal System.Windows.Forms.TextBox dbNameTxtBox;
         internal System.Windows.Forms.TextBox portTxtBox;
@@ -2965,16 +2804,6 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
         private System.Windows.Forms.ToolStripMenuItem disconnectToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem saveLogonInformationToolStripMenuItem;
-        private System.Windows.Forms.ComboBox CategoryDropdown;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.ListView ItemList;
-        private System.Windows.Forms.ColumnHeader columnHeader1;
-        private System.Windows.Forms.ColumnHeader columnHeader2;
-        private System.Windows.Forms.ColumnHeader columnHeader3;
-        private System.Windows.Forms.ColumnHeader columnHeader4;
-        private System.Windows.Forms.ColumnHeader columnHeader5;
-        private System.Windows.Forms.ContextMenuStrip contextItemEdit;
-        private System.Windows.Forms.ToolStripMenuItem copyItemRClkBtn;
         private System.Windows.Forms.TabPage raceTab;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.TabPage marketTab;
@@ -3022,7 +2851,6 @@
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.GroupBox ancestryDetails;
         private System.Windows.Forms.TextBox ancestryNameTxtBox;
-        private System.Windows.Forms.ToolStripMenuItem deleteItemRClkBtn;
         private System.Windows.Forms.ListView marketRacesTxtBox;
         private System.Windows.Forms.ColumnHeader columnHeader10;
         private System.Windows.Forms.ListView marketRegionsTxtBox;
@@ -3044,9 +2872,6 @@
         private System.Windows.Forms.ToolStripMenuItem deleteToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem addToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem modifyToolStripMenuItem;
-        private System.Windows.Forms.TextBox searchItemTxtBox;
-        private System.Windows.Forms.Button searchItem;
-        private System.Windows.Forms.Label label35;
         private System.Windows.Forms.ToolStripMenuItem recordQueriesDisabledToolStripMenuItem;
         private System.Windows.Forms.TabPage oreTab;
         private System.Windows.Forms.ComboBox SELECTOre;
@@ -3057,7 +2882,6 @@
         private System.Windows.Forms.ColumnHeader columnHeader20;
         private System.Windows.Forms.ColumnHeader columnHeader21;
         private System.Windows.Forms.ColumnHeader columnHeader22;
-        private System.Windows.Forms.ToolStripMenuItem editItemRClkBtn;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.TextBox SelectedOretypeID;
         private System.Windows.Forms.ContextMenuStrip oreMenuStrip;
@@ -3185,6 +3009,7 @@
         private System.Windows.Forms.ListBox lbBeltLog;
         private System.Windows.Forms.ColumnHeader columnHeader39;
         private Evemu_DB_Editor.src.GUI.tabAcct tabAcct1;
+        private Evemu_DB_Editor.src.gui.tabItems tabItems1;
     }
 }
 
