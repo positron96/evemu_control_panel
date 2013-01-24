@@ -24,7 +24,7 @@
         /// </summary>
         private void InitializeComponent() {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem(new string[] {
+            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem(new string[] {
             "",
             "",
             "",
@@ -35,7 +35,7 @@
             this.label39 = new System.Windows.Forms.Label();
             this.label36 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
-            this.characterIDTxtBox = new System.Windows.Forms.TextBox();
+            this.tbCharacterID = new System.Windows.Forms.TextBox();
             this.btAddAccount = new System.Windows.Forms.Button();
             this.lCharacterName = new System.Windows.Forms.ComboBox();
             this.label15 = new System.Windows.Forms.Label();
@@ -117,13 +117,13 @@
             this.label19.TabIndex = 36;
             this.label19.Text = "New Account";
             // 
-            // characterIDTxtBox
+            // tbCharacterID
             // 
-            this.characterIDTxtBox.Location = new System.Drawing.Point(703, 77);
-            this.characterIDTxtBox.Name = "characterIDTxtBox";
-            this.characterIDTxtBox.ReadOnly = true;
-            this.characterIDTxtBox.Size = new System.Drawing.Size(111, 20);
-            this.characterIDTxtBox.TabIndex = 30;
+            this.tbCharacterID.Location = new System.Drawing.Point(703, 77);
+            this.tbCharacterID.Name = "tbCharacterID";
+            this.tbCharacterID.ReadOnly = true;
+            this.tbCharacterID.Size = new System.Drawing.Size(111, 20);
+            this.tbCharacterID.TabIndex = 30;
             // 
             // btAddAccount
             // 
@@ -137,13 +137,13 @@
             // 
             // lCharacterName
             // 
+            this.lCharacterName.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.lCharacterName.FormattingEnabled = true;
             this.lCharacterName.Location = new System.Drawing.Point(540, 77);
             this.lCharacterName.Name = "lCharacterName";
             this.lCharacterName.Size = new System.Drawing.Size(119, 21);
             this.lCharacterName.TabIndex = 29;
             this.lCharacterName.SelectedIndexChanged += new System.EventHandler(this.lCharacterName_SelectedIndexChanged);
-            this.lCharacterName.DropDown += new System.EventHandler(this.lCharacterName_DropDown);
             // 
             // label15
             // 
@@ -153,6 +153,7 @@
             this.label15.Size = new System.Drawing.Size(61, 13);
             this.label15.TabIndex = 27;
             this.label15.Text = "Acct Level:";
+            this.label15.Visible = false;
             // 
             // lvCharacterSkills
             // 
@@ -231,7 +232,7 @@
             this.lvAccounts.FullRowSelect = true;
             this.lvAccounts.HideSelection = false;
             this.lvAccounts.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem1});
+            listViewItem2});
             this.lvAccounts.Location = new System.Drawing.Point(17, 106);
             this.lvAccounts.MultiSelect = false;
             this.lvAccounts.Name = "lvAccounts";
@@ -239,6 +240,7 @@
             this.lvAccounts.TabIndex = 32;
             this.lvAccounts.UseCompatibleStateImageBehavior = false;
             this.lvAccounts.View = System.Windows.Forms.View.Details;
+            this.lvAccounts.SelectedIndexChanged += new System.EventHandler(this.lvAccounts_SelectedIndexChanged);
             this.lvAccounts.Click += new System.EventHandler(this.lvAccounts_Click);
             // 
             // columnHeader27
@@ -319,6 +321,7 @@
             this.newAcctLevel.Name = "newAcctLevel";
             this.newAcctLevel.Size = new System.Drawing.Size(130, 21);
             this.newAcctLevel.TabIndex = 24;
+            this.newAcctLevel.Visible = false;
             // 
             // accountTxtBox
             // 
@@ -380,7 +383,7 @@
             this.Controls.Add(this.label39);
             this.Controls.Add(this.label36);
             this.Controls.Add(this.label19);
-            this.Controls.Add(this.characterIDTxtBox);
+            this.Controls.Add(this.tbCharacterID);
             this.Controls.Add(this.btAddAccount);
             this.Controls.Add(this.lCharacterName);
             this.Controls.Add(this.label15);
@@ -411,7 +414,7 @@
         private System.Windows.Forms.Label label39;
         private System.Windows.Forms.Label label36;
         private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.TextBox characterIDTxtBox;
+        private System.Windows.Forms.TextBox tbCharacterID;
         private System.Windows.Forms.Button btAddAccount;
         private System.Windows.Forms.ComboBox lCharacterName;
         private System.Windows.Forms.Label label15;

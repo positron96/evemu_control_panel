@@ -76,6 +76,7 @@
             this.hostTextBox = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.tabAccount = new System.Windows.Forms.TabPage();
+            this.tabAcct1 = new Evemu_DB_Editor.src.GUI.tabAcct();
             this.tabItemEditor = new System.Windows.Forms.TabPage();
             this.label35 = new System.Windows.Forms.Label();
             this.searchItemTxtBox = new System.Windows.Forms.TextBox();
@@ -299,7 +300,6 @@
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.openFileDialog2 = new System.Windows.Forms.OpenFileDialog();
-            this.tabAcct1 = new Evemu_DB_Editor.src.GUI.tabAcct();
             this.menuStrip1.SuspendLayout();
             this.accountTab.SuspendLayout();
             this.tabSQL.SuspendLayout();
@@ -781,6 +781,13 @@
             this.tabAccount.TabIndex = 0;
             this.tabAccount.Text = "Account/Character Editor";
             this.tabAccount.UseVisualStyleBackColor = true;
+            // 
+            // tabAcct1
+            // 
+            this.tabAcct1.Location = new System.Drawing.Point(3, 3);
+            this.tabAcct1.Name = "tabAcct1";
+            this.tabAcct1.Size = new System.Drawing.Size(828, 386);
+            this.tabAcct1.TabIndex = 0;
             // 
             // tabItemEditor
             // 
@@ -2824,13 +2831,6 @@
             // openFileDialog2
             // 
             this.openFileDialog2.FileName = "openFileDialog2";
-            // 
-            // tabAcct1
-            // 
-            this.tabAcct1.Location = new System.Drawing.Point(3, 3);
-            this.tabAcct1.Name = "tabAcct1";
-            this.tabAcct1.Size = new System.Drawing.Size(828, 386);
-            this.tabAcct1.TabIndex = 0;
             // 
             // frMain
             // 
